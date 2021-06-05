@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'main/index.html')
+
+
+def faq(request):
+    return render(request, 'main/faq.html')
