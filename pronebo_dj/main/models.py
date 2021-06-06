@@ -8,6 +8,7 @@ class Item(models.Model):
     slug = models.SlugField(max_length=255, verbose_name='Url', unique=True)
     content = models.TextField(blank=True, verbose_name='Описание')
     photo = models.ImageField(upload_to='photos/', blank=True)
+    price = models.IntegerField(verbose_name='Стоимость')
 
     def __str__(self):
         return self.title

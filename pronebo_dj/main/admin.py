@@ -19,8 +19,8 @@ class ItemAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     save_on_top = True
     form = ItemAdminForm
-    list_display = ('id', 'title',)
-    list_display_links = ('id', 'title')
+    list_display = ('id', 'title', 'price',)
+    list_display_links = ('id', 'title',)
 
 
 admin.site.register(Item, ItemAdmin)
