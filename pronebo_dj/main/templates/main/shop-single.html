@@ -71,7 +71,7 @@
                                     <div class="pull-left">
                                         <!--Btns Box-->
                                         <div class="btns-box">
-                                            <a href="checkout.html" class="theme-btn btn-style-one"><span class="txt">ADD TO CARD &ensp;<i class="flaticon-shopping-cart-3"></i></span></a>
+                                            <a href="#pricing-section" class="theme-btn btn-style-one"><span class="txt">ADD TO CARD &ensp;<i class="flaticon-shopping-cart-3"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -90,100 +90,15 @@
                 </div>
                 <!-- Basic Details -->
 			</div>
-
-			<!-- Related Products -->
-			<div class="related-products">
-				<h5>RELATED PRODUCTS</h5>
-				<div class="row clearfix">
-					
-					<!-- Shop Item -->
-					<div class="shop-item col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a class="overlay-link" href="shop-single.html"></a>
-								<img src="https://via.placeholder.com/370x500" alt="" />
-								<div class="overlay-box">
-									<ul class="cart-option">
-										<li><a href="shop-single.html"><span><img src="images/icons/right-arrow.svg" alt="" /></span></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="lower-content">
-								<h3><a href="shop-single.html">Running Wear</a></h3>
-								<div class="clearfix">
-									<div class="pull-left">
-										<div class="price">$63.90</div>
-									</div>
-									<div class="pull-right">
-										<!-- Rating -->
-										<a href="shop-single.html" class="cart"><span class="icon flaticon-shopping-cart-3"></span></a>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					
-					<!-- Shop Item -->
-					<div class="shop-item col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a class="overlay-link" href="shop-single.html"></a>
-								<img src="https://via.placeholder.com/370x500" alt="" />
-								<div class="overlay-box">
-									<ul class="cart-option">
-										<li><a href="shop-single.html"><span><img src="images/icons/right-arrow.svg" alt="" /></span></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="lower-content">
-								<h3><a href="shop-single.html">Running Sniker</a></h3>
-								<div class="clearfix">
-									<div class="pull-left">
-										<div class="price">$83.90</div>
-									</div>
-									<div class="pull-right">
-										<!-- Rating -->
-										<a href="shop-single.html" class="cart"><span class="icon flaticon-shopping-cart-3"></span></a>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					
-					<!-- Shop Item -->
-					<div class="shop-item col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<a class="overlay-link" href="shop-single.html"></a>
-								<img src="https://via.placeholder.com/370x500" alt="" />
-								<div class="overlay-box">
-									<ul class="cart-option">
-										<li><a href="shop-single.html"><span><img src="images/icons/right-arrow.svg" alt="" /></span></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="lower-content">
-								<h3><a href="shop-single.html">Nutrition Banana</a></h3>
-								<div class="clearfix">
-									<div class="pull-left">
-										<div class="price">$3.90</div>
-									</div>
-									<div class="pull-right">
-										<!-- Rating -->
-										<a href="shop-single.html" class="cart"><span class="icon flaticon-shopping-cart-3"></span></a>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
 			
 		</div>
 	</section>
 	<!-- End Shop Single Section -->
+
+	{% include 'inc/_purchase.html' %}
+
+
+{% include 'inc/_contactform.html' %}
+
 {% endblock %}
+
