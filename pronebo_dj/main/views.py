@@ -4,7 +4,7 @@ from .models import Item
 # Create your views here.
 
 
-def index(request, slug):
+def index(request):
     return render(request, 'main/index.html')
 
 
