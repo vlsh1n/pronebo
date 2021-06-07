@@ -27,7 +27,7 @@ admin.site.register(Item, ItemAdmin)
 
 
 class FaqAdminForm(forms.ModelForm):
-    content = forms.CharField(widget=CKEditorUploadingWidget())
+    answer = forms.CharField(widget=CKEditorUploadingWidget())
 
     class Meta:
         model = Faq
