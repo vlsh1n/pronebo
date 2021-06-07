@@ -17,3 +17,16 @@ class Item(models.Model):
         verbose_name = 'Услуга(-у)'
         verbose_name_plural = 'Услуг(-и)'
         ordering = ['title']
+
+
+class Faq(models.Model):
+    title = models.CharField(max_length=255, verbose_name='Название')
+    question = models.CharField(max_length=255, verbose_name='Вопрос')
+    answer = models.CharField(max_length=1000, verbose_name='Ответ')
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Вопрос/Ответ'
+        verbose_name_plural = 'Вопрос(-ов)/Ответ(-ов)'
