@@ -15,3 +15,7 @@ def faq(request):
 def get_slug(request, slug):
     slug = Item.objects.get(slug=slug)
     return render(request, 'main/shop-single.html', {'slug': slug})
+
+
+def test(request):
+    return render(request, 'main/test.html')

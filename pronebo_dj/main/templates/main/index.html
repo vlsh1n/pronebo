@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load services_tag %}
 
 {% block title %} Главная Страница - PROnebo {% endblock %}
 
@@ -105,86 +106,7 @@
 	<!-- End Testimonial Section -->
 
 	<!-- Services Section -->
-	<section class="services-section">
-		<div class="outer-container">
-			<div class="clearfix">
-				<!-- Service Block -->
-				<div class="service-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="image">
-							<a href="items/{{ slug.slug }}" class="overlay-link"></a>
-							<img src="https://via.placeholder.com/480x703" alt="" />
-							<!-- Overlay Box -->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<h4><a href="body-builder.html">FITNESS</a></h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="image">
-							<a href="body-builder.html" class="overlay-link"></a>
-							<img src="https://via.placeholder.com/480x703" alt="" />
-							<!-- Overlay Box -->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<h4><a href="body-builder.html">BODYBUILDING</a></h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="image">
-							<a href="body-builder.html" class="overlay-link"></a>
-							<img src="https://via.placeholder.com/480x703" alt="" />
-							<!-- Overlay Box -->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<h4><a href="body-builder.html">CROSSFIT</a></h4>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="image">
-							<a href="body-builder.html" class="overlay-link"></a>
-							<img src="https://via.placeholder.com/480x703" alt="" />
-							<!-- Overlay Box -->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<h4><a href="body-builder.html">CARDIO</a></h4>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
+	{% show_services %}
 	<!-- End Services Section -->
 
 	<!-- We Are Section -->
