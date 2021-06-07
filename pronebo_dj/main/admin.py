@@ -24,3 +24,21 @@ class ItemAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Item, ItemAdmin)
+
+
+class FaqAdminForm(forms.ModelForm):
+    content = forms.CharField(widget=CKEditorUploadingWidget())
+
+    class Meta:
+        model = Faq
+        fields = '__all__'
+
+
+class FaqAdmin(admin.ModelAdmin):
+    save_on_top = True
+    form = FaqAdminForm
+    list_display = ('id', 'title',)
+    list_display_links = ('id', 'title',)
+
+
+admin.site.register(Faq, FaqAdmin)
