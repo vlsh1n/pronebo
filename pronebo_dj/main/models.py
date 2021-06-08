@@ -16,7 +16,7 @@ class Item(models.Model):
     class Meta:
         verbose_name = 'Услуга(-у)'
         verbose_name_plural = 'Услуг(-и)'
-        ordering = ['title']
+        ordering = ['id']
 
 
 class Faq(models.Model):
@@ -30,3 +30,4 @@ class Faq(models.Model):
     class Meta:
         verbose_name = 'Вопрос/Ответ'
         verbose_name_plural = 'Вопрос(-ов)/Ответ(-ов)'
+        ordering = ['id']
