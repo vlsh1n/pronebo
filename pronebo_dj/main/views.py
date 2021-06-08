@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Item
+from .forms import OrderForm
 
 # Create your views here.
 
@@ -15,6 +16,15 @@ def faq(request):
 def service(request, slug):
     services = get_object_or_404(Item, slug=slug)
     return render(request, 'main/shop-single.html', {'services': services})
+
+
+def contact_form(request):
+    if request.method == 'POST':
+        pass
+    else:
+        form = OrderForm()
+    return render(request, 'inc/_contactform.html', {'form': form})
+
 
 
 def test(request):
