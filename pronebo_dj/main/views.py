@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Item
 
 # Create your views here.
@@ -13,7 +13,7 @@ def faq(request):
 
 
 def service(request, slug):
-    services = Item.objects.get(slug=slug)
+    services = get_object_or_404(Item, slug=slug)
     return render(request, 'main/shop-single.html', {'services': services})
 
 
