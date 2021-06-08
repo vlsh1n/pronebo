@@ -12,9 +12,9 @@ def faq(request):
     return render(request, 'main/faq.html')
 
 
-def get_slug(request, slug):
-    slug = Item.objects.get(slug=slug)
-    return render(request, 'main/shop-single.html', {'slug': slug})
+def service(request, slug):
+    services = Item.objects.get(slug=slug)
+    return render(request, 'main/shop-single.html', {'services': services})
 
 
 def test(request):

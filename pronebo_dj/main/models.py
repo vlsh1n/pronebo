@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+from django.urls import reverse_lazy, reverse
 
 
 class Item(models.Model):
@@ -9,6 +10,9 @@ class Item(models.Model):
     content = models.TextField(blank=True, verbose_name='Описание')
     photo = models.ImageField(upload_to='photos/', blank=True)
     price = models.IntegerField(verbose_name='Стоимость')
+
+    def get_absolute_url(self):
+        return reverse('services', kwargs={'slug': self.slug})
 
     def __str__(self):
         return self.title

@@ -5,6 +5,6 @@ from .views import *
 urlpatterns = [
     path('', index, name='home'),
     path('faq/', faq, name='faq'),
-    path('items/<slug:slug>', get_slug, name='items'),
+    path('services/<slug:slug>', service, name='services'),
     path('test/', test, name='test'),
 ]
