@@ -28,7 +28,9 @@
                             <div class="carousel-outer">
         
                                 <ul class="image-carousel owl-carousel owl-theme">
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
+                                    {% for photo in photos %}
+                                    <li><a href="{{ photo.image.url }}" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
+                                    {% endfor %}
                                     <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
                                     <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
                                     <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
@@ -41,7 +43,9 @@
                                 </ul>
                                 
                                 <ul class="thumbs-carousel owl-carousel owl-theme">
-                                    <li><img src="https://via.placeholder.com/171x176" alt=""></li>
+                                    {% for thumb in thumbs %}
+                                    <li><img src="{{ thumb.image.url }}" alt=""></li>
+                                    {% endfor %}
                                     <li><img src="https://via.placeholder.com/171x176" alt=""></li>
                                     <li><img src="https://via.placeholder.com/171x176" alt=""></li>
                                     <li><img src="https://via.placeholder.com/171x176" alt=""></li>
