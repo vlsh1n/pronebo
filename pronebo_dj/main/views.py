@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Item
+from .models import Item, Images
 from .forms import OrderForm
 
 # Create your views here.
@@ -15,7 +15,8 @@ def faq(request):
 
 def service(request, slug):
     services = get_object_or_404(Item, slug=slug)
-    return render(request, 'main/shop-single.html', {'services': services})
+    images = Images.objects.all()
+    return render(request, 'main/shop-single.html', {'services': services, 'images': images})
 
 
 def contact_form(request):

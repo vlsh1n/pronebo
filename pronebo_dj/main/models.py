@@ -35,3 +35,11 @@ class Faq(models.Model):
         verbose_name = 'Вопрос/Ответ'
         verbose_name_plural = 'Вопрос(-ов)/Ответ(-ов)'
         ordering = ['id']
+
+
+class Images(models.Model):
+    service = models.ForeignKey('Item', on_delete=models.SET_NULL, null=True)
+    image = models.ImageField(upload_to='photos/')
+
+    class Meta:
+        ordering = ['service']

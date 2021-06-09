@@ -28,31 +28,15 @@
                             <div class="carousel-outer">
         
                                 <ul class="image-carousel owl-carousel owl-theme">
-                                    {% for photo in photos %}
-                                    <li><a href="{{ photo.image.url }}" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
+                                    {% for item in images %}
+                                    <li><a href="{{ item.image.url }}" class="lightbox-image" title=""><img src="{{ item.image.url }}" alt=""></a></li>
                                     {% endfor %}
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
-                                    <li><a href="https://via.placeholder.com/570x676" class="lightbox-image" title="Image Caption Here"><img src="https://via.placeholder.com/570x676" alt=""></a></li>
                                 </ul>
                                 
                                 <ul class="thumbs-carousel owl-carousel owl-theme">
-                                    {% for thumb in thumbs %}
-                                    <li><img src="{{ thumb.image.url }}" alt=""></li>
+                                    {% for item in images %}
+                                    <li><img src="{{ item.image.url }}" alt=""></li>
                                     {% endfor %}
-                                    <li><img src="https://via.placeholder.com/171x176" alt=""></li>
-                                    <li><img src="https://via.placeholder.com/171x176" alt=""></li>
-                                    <li><img src="https://via.placeholder.com/171x176" alt=""></li>
-                                    <li><img src="https://via.placeholder.com/171x176" alt=""></li>
-                                    <li><img src="https://via.placeholder.com/171x176" alt=""></li>
-                                    <li><img src="https://via.placeholder.com/171x176" alt=""></li>
-                                    <li><img src="https://via.placeholder.com/171x176" alt=""></li>
                                 </ul>
                                 
                             </div>

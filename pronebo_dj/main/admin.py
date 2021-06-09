@@ -42,3 +42,11 @@ class FaqAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Faq, FaqAdmin)
+
+
+class ImagesAdmin(admin.ModelAdmin):
+    list_display = ('service',)
+    save_on_top = True
+
+
+admin.site.register(Images, ImagesAdmin)
