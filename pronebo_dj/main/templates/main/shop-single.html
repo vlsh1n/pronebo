@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
 
+{% block seo %} {% endblock %}
+
+{% block title %} {{ services.title }} - PROnebo {% endblock %}
+
 {% block content %}
 	<!--Page Title-->
     <section class="page-title" style="background-image:url(https://via.placeholder.com/1920x720)">
     	<div class="auto-container">
-			<h2>OUR STORE</h2>
+			<h2>{{ services.title|upper }}</h2>
 			<ul class="page-breadcrumb">
-				<li><a href="index.html">home</a></li>
-				<li>Shop</li>
+				<li><a href="{% url 'home' %}">главная</a></li>
+				<li>Услуги</li>
 			</ul>
         </div>
     </section>
@@ -46,7 +50,7 @@
                         <!--Info Column-->
                         <div class="info-column col-lg-6 col-md-12 col-sm-12">
                             <div class="details-header">
-                                <h5>{{ services.title }}</h5>
+                                <h5>{{ services.title|upper }}</h5>
 								<div class="text"> {{ services.content|safe }} </div>
                                 <div class="item-price">{{ services.price }} руб.</div>
                             </div>
@@ -54,24 +58,22 @@
                             <div class="other-options">
                                 <div class="clearfix">
                                     <div class="pull-left">
-                                        <div class="item-quantity"><input class="quantity-spinner" type="text" value="2" name="quantity"></div>
-                                    </div>
-                                    <div class="pull-left">
                                         <!--Btns Box-->
                                         <div class="btns-box">
-                                            <a href="#pricing-section" class="theme-btn btn-style-one"><span class="txt">ADD TO CARD &ensp;<i class="flaticon-shopping-cart-3"></i></span></a>
+                                            <a href="#pricing-section" class="theme-btn btn-style-one"><span class="txt">ОСТАВИТЬ ЗАЯВКУ &ensp;<i class="flaticon-shopping-cart-3"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
                                 
                             </div>
-                            
+
+                            {% comment %}
                             <ul class="shop-list">
-                            	<li><strong>SKU:</strong>N/A</li>
-                                <li><strong>Categories:</strong>New Arrivals</li>
-                                <li><strong>Tag:</strong>Sport</li>
+                            	<li><strong>Возрастное ограничение:</strong>N/A</li>
+                                <li><strong>Уровень сложности:</strong>New Arrivals</li>
                             </ul>
-                            
+                            {% endcomment %}
+
                         </div>
                         
                     </div>
