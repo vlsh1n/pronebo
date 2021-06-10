@@ -9,3 +9,9 @@ register = template.Library()
 def show_services():
     services = Item.objects.all()
     return {'services': services}
+
+
+@register.inclusion_tag('main/header_list_services.html')
+def list_services():
+    services = Item.objects.all()
+    return {'services': services}

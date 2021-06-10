@@ -27,6 +27,5 @@ def contact_form(request):
     return render(request, 'inc/_contactform.html', {'form': form})
 
 
-
 def test(request):
     return render(request, 'main/test.html')
