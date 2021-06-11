@@ -7,8 +7,9 @@ from ckeditor_uploader.widgets import CKEditorUploadingWidget
 from .models import *
 
 
+# Creating logic for using ckeditor with Item form in admin page when we create new post
 class ItemAdminForm(forms.ModelForm):
-    content = forms.CharField(widget=CKEditorUploadingWidget())
+    content = forms.CharField(widget=CKEditorUploadingWidget())  # In Items table we use ckeditor for contact row
 
     class Meta:
         model = Item
@@ -16,7 +17,7 @@ class ItemAdminForm(forms.ModelForm):
 
 
 class ItemAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug': ('title',)}
+    prepopulated_fields = {'slug': ('title',)}  # Auto creating slug from title
     save_on_top = True
     form = ItemAdminForm
     list_display = ('id', 'title', 'price',)
@@ -26,6 +27,7 @@ class ItemAdmin(admin.ModelAdmin):
 admin.site.register(Item, ItemAdmin)
 
 
+# Creating logic for using ckeditor with Faq from in admin page when we create new post
 class FaqAdminForm(forms.ModelForm):
     answer = forms.CharField(widget=CKEditorUploadingWidget())
 

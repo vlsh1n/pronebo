@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', include('main.urls')),
-    path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),  # Creating path for ckeditor to make it work
     path('admin/', admin.site.urls),
 ]
 

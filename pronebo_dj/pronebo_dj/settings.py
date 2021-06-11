@@ -1,11 +1,11 @@
 import os
 from pathlib import Path
 
-# Logic for work with .env
+# Import module for work with .env
 from environs import Env
 
-env = Env()
-env.read_env()
+env = Env()  # Creating object for work with .env
+env.read_env()  # Reading .env file
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -134,6 +134,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+
+# Logic for CKEditor
 INTERNAL_IPS = ['127.0.0.1', ]
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'

@@ -1,9 +1,10 @@
 from django.db import models
 
 # Create your models here.
-from django.urls import reverse_lazy, reverse
+from django.urls import reverse
 
 
+# Model for services
 class Item(models.Model):
     title = models.CharField(max_length=255, verbose_name='Название')
     slug = models.SlugField(max_length=255, verbose_name='Url', unique=True)
@@ -23,6 +24,7 @@ class Item(models.Model):
         ordering = ['id']
 
 
+# Model for questions|answers for FAQ page
 class Faq(models.Model):
     title = models.CharField(max_length=255, verbose_name='Название')
     question = models.CharField(max_length=255, verbose_name='Вопрос')
@@ -37,8 +39,9 @@ class Faq(models.Model):
         ordering = ['id']
 
 
+# Model for images in service page
 class Images(models.Model):
-    service = models.ForeignKey('Item', on_delete=models.SET_NULL, null=True)
+    service = models.ForeignKey('Item', on_delete=models.SET_NULL, null=True) # Row for choosing dependence with service
     image = models.ImageField(upload_to='photos/')
 
     class Meta:

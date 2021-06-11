@@ -3,6 +3,7 @@ from django import forms
 from .models import Item
 
 
+# Creating model for order form
 class OrderForm(forms.Form):
     name = forms.CharField(max_length=255)
     email = forms.EmailField()
