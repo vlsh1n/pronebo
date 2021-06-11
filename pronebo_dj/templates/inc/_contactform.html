@@ -12,12 +12,11 @@
 
 			<!-- Default Form -->
 			<form method="post" action="{% url 'contact' %}">
+				{% csrf_token %}
 				<div class="row clearfix">
 
-				{% csrf_token %}
-
 					<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-						<input type="text" name="name" placeholder="Name" required>
+						<input type="text" name="name" placeholder="Как Вас зовут?" required>
 					</div>
 
 					<div class="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -29,12 +28,12 @@
 					</div>
 
 					<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-						<textarea class="darma" name="message" placeholder="Your Message"></textarea>
+						<textarea class="darma" name="message" placeholder="Комментарий"></textarea>
 					</div>
 
 					<div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
-						<span class="data">* Personal data will be encrypted</span>
-						<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">SEND MESSAGE</span></button>
+						<span class="data">* Все личные данные зашифрованы</span>
+						<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></button>
 					</div>
 
 				</div>
