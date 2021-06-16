@@ -16,7 +16,7 @@ def faq(request):
 
 def service(request, slug):
     services = get_object_or_404(Item, slug=slug)
-    images = Images.objects.all()
+    images = Images.objects.filter(service=services)
     return render(request, 'main/shop-single.html', {'services': services, 'images': images})
 
 
