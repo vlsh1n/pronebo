@@ -426,8 +426,7 @@
 	<section class="testimonial-section-two">
 		<div class="auto-container">
 			<div class="sec-title centered">
-				<h2><span>WHAT OUR</span><br>CLIENTS SAY</h2>
-				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
+				<h2><span>Что клиенты</span><br>говорят о нас</h2>
 			</div>
 
 			<div class="testimonial-outer">
@@ -436,24 +435,11 @@
 				<!--Product Thumbs Carousel-->
                 <div class="client-thumb-outer">
                     <div class="client-thumbs-carousel owl-carousel owl-theme">
+						{% for item in testimonial %}
                         <div class="thumb-item">
-                            <figure class="thumb-box"><img src="https://via.placeholder.com/144x144" alt=""></figure>
+                            <figure class="thumb-box"><img src="{{ item.photo.url }}" alt=""></figure>
                         </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="https://via.placeholder.com/144x144" alt=""></figure>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="https://via.placeholder.com/144x144" alt=""></figure>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="https://via.placeholder.com/144x144" alt=""></figure>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="https://via.placeholder.com/144x144" alt=""></figure>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="https://via.placeholder.com/144x144" alt=""></figure>
-                        </div>
+						{% endfor %}
                     </div>
                 </div>
 
@@ -461,82 +447,19 @@
                 <div class="client-testimonial-carousel owl-carousel owl-theme">
 
                     <!--Testimonial Block -->
+					{% for item in testimonial %}
                     <div class="testimonial-block-two">
                         <div class="inner-box">
 							<span class="quote-left flaticon-quote-3"></span>
 							<span class="quote-right flaticon-quote-4"></span>
-							<div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+							<div class="text">{{ item.phrase }}</div>
 							<div class="author-info">
-								<div class="author-name">Samantha Green</div>
-								<div class="designation">CEO of Company</div>
+								<div class="author-name">{{ item.name }}</div>
+								<div class="designation">{{ item.position }}</div>
 							</div>
                         </div>
                     </div>
-
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block-two">
-                        <div class="inner-box">
-							<span class="quote-left flaticon-quote-3"></span>
-							<span class="quote-right flaticon-quote-4"></span>
-							<div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
-							<div class="author-info">
-								<div class="author-name">Samantha Green</div>
-								<div class="designation">CEO of Company</div>
-							</div>
-                        </div>
-                    </div>
-
-					<!--Testimonial Block -->
-                    <div class="testimonial-block-two">
-                        <div class="inner-box">
-							<span class="quote-left flaticon-quote-3"></span>
-							<span class="quote-right flaticon-quote-4"></span>
-							<div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
-							<div class="author-info">
-								<div class="author-name">Samantha Green</div>
-								<div class="designation">CEO of Company</div>
-							</div>
-                        </div>
-                    </div>
-
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block-two">
-                        <div class="inner-box">
-							<span class="quote-left flaticon-quote-3"></span>
-							<span class="quote-right flaticon-quote-4"></span>
-							<div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
-							<div class="author-info">
-								<div class="author-name">Samantha Green</div>
-								<div class="designation">CEO of Company</div>
-							</div>
-                        </div>
-                    </div>
-
-					<!--Testimonial Block -->
-                    <div class="testimonial-block-two">
-                        <div class="inner-box">
-							<span class="quote-left flaticon-quote-3"></span>
-							<span class="quote-right flaticon-quote-4"></span>
-							<div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
-							<div class="author-info">
-								<div class="author-name">Samantha Green</div>
-								<div class="designation">CEO of Company</div>
-							</div>
-                        </div>
-                    </div>
-
-					<!--Testimonial Block -->
-                    <div class="testimonial-block-two">
-                        <div class="inner-box">
-							<span class="quote-left flaticon-quote-3"></span>
-							<span class="quote-right flaticon-quote-4"></span>
-							<div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
-							<div class="author-info">
-								<div class="author-name">Samantha Green</div>
-								<div class="designation">CEO of Company</div>
-							</div>
-                        </div>
-                    </div>
+					{% endfor %}
 
                 </div>
 

@@ -52,7 +52,7 @@ class Images(models.Model):
 class Testimonial(models.Model):
     name = models.CharField(max_length=255, verbose_name='Имя')
     position = models.CharField(max_length=255, verbose_name='Должность/хобби')
-    phrase = models.CharField(max_length=511, verbose_name='Высказывание')
+    phrase = models.TextField(max_length=511, verbose_name='Высказывание')
     photo = models.ImageField(upload_to='photos/clients/')
 
     def __str__(self):

@@ -1,6 +1,6 @@
 from django.core.mail import send_mail
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Item, Images, Faq
+from .models import Item, Images, Faq, Testimonial
 from .forms import OrderForm
 
 # Create your views here.
@@ -8,7 +8,8 @@ from .forms import OrderForm
 
 def index(request):
     faq = Faq.objects.all()
-    return render(request, 'main/index.html', {'faq': faq})
+    testimonial = Testimonial.objects.all()
+    return render(request, 'main/index.html', {'faq': faq, 'testimonial': testimonial})
 
 
 def faq(request):
