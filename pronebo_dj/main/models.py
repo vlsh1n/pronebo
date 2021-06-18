@@ -46,3 +46,19 @@ class Images(models.Model):
 
     class Meta:
         ordering = ['service']
+
+
+# Model for testimonial
+class Testimonial(models.Model):
+    name = models.CharField(max_length=255, verbose_name='Имя')
+    position = models.CharField(max_length=255, verbose_name='Должность/хобби')
+    phrase = models.CharField(max_length=511, verbose_name='Высказывание')
+    photo = models.ImageField(upload_to='photos/clients/')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Отзыв'
+        verbose_name_plural = 'Отзыв(-ов)'
+        ordering = ['id', 'name']
