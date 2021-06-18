@@ -19,7 +19,10 @@ def faq(request):
 def service(request, slug):
     services = get_object_or_404(Item, slug=slug)
     images = Images.objects.filter(service=services)
-    return render(request, 'main/shop-single.html', {'services': services, 'images': images})
+    if slug == 'comming-soon':
+        return render(request, 'main/commingsoon.html')
+    else:
+        return render(request, 'main/shop-single.html', {'services': services, 'images': images})
 
 
 def contact_form(request):

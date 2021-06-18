@@ -122,7 +122,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'main/static/blackfit'),
-    os.path.join(BASE_DIR, 'main/static/unibody'),
 ]
 
 # Default primary key field type
