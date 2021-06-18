@@ -1,13 +1,14 @@
 from django.core.mail import send_mail
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Item, Images
+from .models import Item, Images, Faq
 from .forms import OrderForm
 
 # Create your views here.
 
 
 def index(request):
-    return render(request, 'main/index.html')
+    faq = Faq.objects.all()
+    return render(request, 'main/index.html', {'faq': faq})
 
 
 def faq(request):
