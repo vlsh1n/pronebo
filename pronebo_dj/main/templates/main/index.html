@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load services_tag %}
+{% load static %}
 
 {% block title %} Главная Страница - PROnebo {% endblock %}
 
@@ -9,16 +10,27 @@
 		<div class="main-slider-carousel owl-carousel owl-theme">
 
 			<div class="slide">
-				<div class="image-layer" style="background-image:url(https://via.placeholder.com/1920x930)"></div>
+																		<!--1920x930-->
+				<div class="image-layer" style="background-image:url(https://images.pexels.com/photos/382177/pexels-photo-382177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
 				<div class="auto-container">
 					<!-- Content Boxed -->
 					<div class="content-boxed">
 						<div class="inner-boxed">
-							<h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
-							<div class="text">BLACKFIT – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
-							<div class="btns-box">
-								<div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
-							</div>
+							<h1>Ты можешь больше <span>Чем ты думаешь</span></h1>
+							<div class="text"><p class="font-weight-bold">Взгляни своим страхам в глаза <br> Решись на прыжок с парашютом в тандеме с инструктором</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="image-layer" style="background-image:url(https://images.pexels.com/photos/382177/pexels-photo-382177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
+				<div class="auto-container">
+					<!-- Content Boxed -->
+					<div class="content-boxed">
+						<div class="inner-boxed">
+							<h1>Стань <span>Покорителем неба</span></h1>
+							<div class="text">Пройди курс AFF, получи сертификат и начни прыгать с парашютом самостоятельно!</div>
 						</div>
 					</div>
 				</div>
@@ -33,26 +45,6 @@
 						<div class="inner-boxed">
 							<h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
 							<div class="text">BLACKFIT – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
-							<div class="btns-box">
-								<div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="slide">
-				<div class="image-layer" style="background-image:url(https://via.placeholder.com/1920x930)"></div>
-				<div class="auto-container">
-					<!-- Content Boxed -->
-					<div class="content-boxed">
-						<div class="inner-boxed">
-							<h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
-							<div class="text">BLACKFIT – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
-							<div class="btns-box">
-								<div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -80,7 +72,7 @@
 
 		<!--Scroll Dwwn Btn-->
         <div class="mouse-btn-down scroll-to-target" data-target=".testimonial-section">
-			<span class="icon"><img src="images/icons/scroll.png" alt="" /></span>
+			<span class="icon"><img src="{% static 'images/icons/scroll.png' %}" alt="" /></span>
 		</div>
 
 	</section>
