@@ -39,9 +39,15 @@
 
 **********************************************/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap'); */
 
-/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+/* font-family: 'Montserrat', sans-serif; */
 
 @import url('font-awesome.css');
 @import url('flaticon.css');
@@ -54,38 +60,14 @@
 @import url('jquery.bootstrap-touchspin.css');
 @import url('jquery.mCustomScrollbar.min.css');
 
-@font-face {
-  font-family: 'MonumentExtended-Regular';
-  src:  url('../fonts/monumentExtended-Regular.eot');
-  src:  url('../fonts/monumentExtended-Regular.eot#iefix') format('embedded-opentype'),
-    url('../fonts/monumentExtended-Regular.ttf') format('truetype'),
-    url('../fonts/monumentExtended-Regular.woff') format('woff'),
-    url('../fonts/monumentExtended-Regular.svg#monumentExtended-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: 'MonumentExtended-Ultrabold';
-  src:  url('../fonts/monumentExtended-Ultrabold.eot');
-  src:  url('../fonts/monumentExtended-Ultrabold.eot#iefix') format('embedded-opentype'),
-    url('../fonts/monumentExtended-Ultrabold.ttf') format('truetype'),
-    url('../fonts/monumentExtended-Ultrabold.woff') format('woff'),
-    url('../fonts/monumentExtended-Ultrabold.svg#monumentExtended-Ultrabold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/*** 
+/***
 
 ====================================================================
 	Reset
 ====================================================================
 
  ***/
- 
+
 * {
 	margin:0px;
 	padding:0px;
@@ -93,7 +75,7 @@
 	outline:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Global Settings
@@ -102,7 +84,7 @@
  ***/
 
 body {
-	font-family: 'MonumentExtended-Regular';
+	font-family: 'Montserrat', sans-serif;
 	font-size:14px;
 	color:#777777;
 	line-height:1.7em;
@@ -134,11 +116,11 @@ h1,h2,h3,h4,h5,h6 {
 	margin:0px;
 	background:none;
 	line-height:1.6em;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 input,button,select,textarea{
-	
+
 }
 
 textarea{
@@ -147,7 +129,7 @@ textarea{
 
 p{
 	position:relative;
-	line-height:1.8em;	
+	line-height:1.8em;
 }
 
 /* Typography */
@@ -197,7 +179,7 @@ h6{
 ul,li{
 	list-style:none;
 	padding:0px;
-	margin:0px;	
+	margin:0px;
 }
 
 img{
@@ -216,7 +198,7 @@ img{
 }
 
 .centered{
-	text-align:center;	
+	text-align:center;
 }
 
 /***
@@ -298,7 +280,7 @@ img{
 	background-color: transparent;
 	cursor: pointer;
 	text-decoration: none;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .custom-btn:hover {
@@ -335,7 +317,7 @@ img{
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*Btn Style One*/
@@ -353,7 +335,7 @@ img{
 	border-radius:0px;
 	text-transform: uppercase;
 	border:2px solid rgba(255,255,255,0.20);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -webkit-transition: all 300ms ease;
@@ -364,7 +346,7 @@ img{
 .btn-style-one .txt{
 	position:relative;
 	z-index:1;
-	
+
 }
 
 .btn-style-one:before{
@@ -411,7 +393,7 @@ img{
 	border-radius:0px;
 	text-transform: uppercase;
 	border:2px solid #000000;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -webkit-transition: all 300ms ease;
@@ -422,7 +404,7 @@ img{
 .btn-style-two .txt{
 	position:relative;
 	z-index:1;
-	
+
 }
 
 .btn-style-two:before{
@@ -469,7 +451,7 @@ img{
 	letter-spacing:2px;
 	background: #000000 !important;
 	text-transform: capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .btn-style-three .txt{
@@ -669,17 +651,17 @@ img{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000000; 
+  background: #000000;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffffff; 
+  background: #ffffff;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 /*=== Preloder ===*/
@@ -738,10 +720,10 @@ img{
 img{
 	display:inline-block;
 	max-width:100%;
-	height:auto;	
+	height:auto;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Section Title
@@ -776,7 +758,7 @@ img{
     font-weight: 400;
     line-height: 1.6em;
     margin-top: 18px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .sec-title.light h2{
@@ -787,7 +769,7 @@ img{
 	text-align: center;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Section Title Two
@@ -825,7 +807,7 @@ img{
 	font-size:17px;
 	opacity:0.5;
 	margin-top:30px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .sec-title-two.black h2{
@@ -842,7 +824,7 @@ img{
 	opacity:0.70;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Header style
@@ -890,7 +872,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .main-header .header-upper .mobile-logo{
@@ -976,9 +958,9 @@ img{
 	font-size:16px;
 	letter-spacing:1px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
- 
+
 .main-header .sticky-header .navbar-header{
 	display:none;
 }
@@ -1117,7 +1099,7 @@ img{
 	text-align:center;
 	line-height:18px;
 	background-color:#ffffff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .main-header.header-style-three .outer-box .cart-box .cart-box-btn:hover{
@@ -1175,7 +1157,7 @@ img{
 	line-height:1.4em;
     letter-spacing: 1px;
     text-transform: capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .main-header .outer-box .cart-product .inner h3 a{
@@ -1198,7 +1180,7 @@ img{
     font-weight: 300;
     color: #ffffff;
 	margin-top:5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main-header .outer-box .cart-box .cart-panel{
@@ -1226,7 +1208,7 @@ img{
 	font-weight:400;
 	margin-bottom:15px;
 	text-transform:capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .main-header .outer-box .cart-box .cart-panel .cart-total span{
@@ -1294,7 +1276,7 @@ img{
 	-moz-animation-iteration-count: 1;
 	-op-animation-iteration-count: 1;
 	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;	
+	animation-iteration-count: 1;
 }
 
 .main-menu .navigation > li > a{
@@ -1314,7 +1296,7 @@ img{
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .sticky-header .main-menu .navigation > li{
@@ -1355,7 +1337,7 @@ img{
 
 .main-menu .navigation > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-menu .navigation > li > ul > li{
@@ -1377,7 +1359,7 @@ img{
 	font-size:15px;
 	text-transform:capitalize;
 	color:#ffffff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -1413,7 +1395,7 @@ img{
 	font-size:16px;
 	font-weight:normal;
 	text-align:center;
-	z-index:5;	
+	z-index:5;
 }
 
 .main-menu .navigation > li > ul > li.dropdown:hover > a:after{
@@ -1439,7 +1421,7 @@ img{
 
 .main-menu .navigation > li > ul > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-menu .navigation > li > ul > li > ul > li{
@@ -1449,7 +1431,7 @@ img{
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-	border-bottom:none;	
+	border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a{
@@ -1461,7 +1443,7 @@ img{
 	font-size:15px;
 	text-transform:capitalize;
 	color:#ffffff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -1488,11 +1470,11 @@ img{
 	font-size:16px;
 	font-weight:normal;
 	text-align:center;
-	z-index:5;	
+	z-index:5;
 }
 
 .main-menu .navigation > li > ul > li > ul > li.dropdown:hover > a:after{
-	color:#ffffff;	
+	color:#ffffff;
 }
 
 .main-menu .navigation > li.dropdown:hover > ul{
@@ -1520,7 +1502,7 @@ img{
 	-moz-transition:all 300ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;	
+	-o-transition:all 300ms ease;
 }
 
 .main-menu .navbar-collapse > ul li.dropdown .dropdown-btn{
@@ -1580,7 +1562,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-ms-transition: all 700ms ease;
 	-o-transition: all 700ms ease;
 	-moz-transition: all 700ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fullscreen-menu .close-menu:hover{
@@ -1594,7 +1576,7 @@ body.visible-menu-bar .fullscreen-menu{
 	width:100%;
 	height:100%;
 	display:table;
-	vertical-align:middle;	
+	vertical-align:middle;
 	transition:all 300ms ease;
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
@@ -1605,7 +1587,7 @@ body.visible-menu-bar .fullscreen-menu{
 	position:relative;
 	width:100%;
 	display:table-cell;
-	vertical-align:middle;	
+	vertical-align:middle;
 }
 
 .fullscreen-menu .full-menu{
@@ -1639,7 +1621,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fullscreen-menu .full-menu .navigation > li .dropdown-btn{
@@ -1657,11 +1639,11 @@ body.visible-menu-bar .fullscreen-menu{
 .fullscreen-menu .full-menu .navigation > li > ul > li{
 	position:relative;
 	display:block;
-	margin-bottom:6px;	
+	margin-bottom:6px;
 }
 
 .fullscreen-menu .full-menu .navigation > li > ul > li:last-child{
-	margin-bottom:0px;	
+	margin-bottom:0px;
 }
 
 .fullscreen-menu .full-menu .navigation > li > ul > li > a{
@@ -1675,7 +1657,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fullscreen-menu .full-menu .navigation > li > ul > li > a:hover{
@@ -1700,7 +1682,7 @@ body.visible-menu-bar .fullscreen-menu{
 	border-bottom:1px solid #ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Scroll To Top style
@@ -1727,7 +1709,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;		
+	transition:all 300ms ease;
 }
 
 .scroll-to-toped:hover{
@@ -1735,7 +1717,7 @@ body.visible-menu-bar .fullscreen-menu{
 	background:#000000;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Mobile Menu
@@ -1769,7 +1751,7 @@ body.visible-menu-bar .fullscreen-menu{
 .mobile-menu .nav-logo{
 	position:relative;
 	padding:50px 20px 10px;
-	text-align:left;	
+	text-align:left;
 }
 
 .mobile-menu .nav-logo img{
@@ -1903,12 +1885,12 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size: 15px;
 	color: #ffffff;
 	text-transform: capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .mobile-menu .navigation li:hover > a,
 .mobile-menu .navigation li.current > a{
-	color:#ffffff;	
+	color:#ffffff;
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn{
@@ -1948,7 +1930,7 @@ body.visible-menu-bar .fullscreen-menu{
 	display: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section
@@ -2051,7 +2033,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .banner-section .active .content-boxed .text{
@@ -2091,7 +2073,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .banner-section .boxed-column .theme-btn{
-	
+
 }
 
 .banner-section .owl-dots{
@@ -2252,7 +2234,7 @@ body.visible-menu-bar .fullscreen-menu{
 	border-radius:0px;
 	background:none;
 	border:1px solid rgba(255,255,255,0.10);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .form-group .ui-button .ui-icon{
@@ -2260,7 +2242,7 @@ body.visible-menu-bar .fullscreen-menu{
 	position:relative;
 	top:6px;
 	text-indent:0px;
-	color:#333333;	
+	color:#333333;
 }
 
 .form-group .ui-button .ui-icon:before{
@@ -2291,7 +2273,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .ui-menu .ui-menu-item:last-child{
-	border:none;	
+	border:none;
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active{
@@ -2311,7 +2293,7 @@ body.visible-menu-bar .fullscreen-menu{
 	background-color:#000000;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -2360,7 +2342,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:300;
 	line-height:1.8em;
 	margin-bottom:20px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .testimonial-section .about-text p:last-child{
@@ -2452,7 +2434,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .service-block .inner-box:hover .overlay-box{
-	
+
 }
 
 .service-block .inner-box .overlay-box:before{
@@ -2572,7 +2554,7 @@ body.visible-menu-bar .fullscreen-menu{
 	opacity:0.80;
 	font-weight:400;
 	margin-top:18px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .service-block .inner-box .overlay-box-two .content .social-box{
@@ -2587,7 +2569,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:14px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	We Are Section
@@ -2612,7 +2594,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-weight: 300;
     line-height: 1.8em;
     margin-bottom: 80px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .we-are-section.style-two .video-box{
@@ -2751,7 +2733,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-top:80px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Section
@@ -2904,7 +2886,7 @@ body.visible-menu-bar .fullscreen-menu{
 	background-color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section
@@ -2976,7 +2958,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-top:0px;
 	color:#ffffff;
 	opacity:0.3;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fact-counter.style-two .column .inner .count-outer{
@@ -2989,7 +2971,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-top:0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Pricing Section
@@ -3041,7 +3023,7 @@ body.visible-menu-bar .fullscreen-menu{
 	transform:rotate(-90deg);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffffff;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 	text-transform:uppercase;
 	transform-origin: 7% 20%;
 }
@@ -3098,7 +3080,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-bottom:18px;
 	font-weight:400;
 	color:rgba(255,255,255,0.50);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .price-block .inner-box .price-list li.hide{
@@ -3113,364 +3095,22 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#ffffff;
 	margin-top:40px;
 	margin-bottom:20px;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .price-block .inner-box .price span{
 	font-weight:400;
 	display:block;
 	font-size:16px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .price-block .inner-box .theme-btn{
 	cursor:pointer;
 }
 
-/*** 
 
-====================================================================
-	Coaches Section
-====================================================================
-
-***/
-
-.coaches-section{
-	position:relative;
-	padding-top:160px;
-}
-
-.coaches-section .sec-title{
-	margin-bottom:80px;
-}
-
-.coaches-section .owl-dots{
-	display:none;
-}
-
-.coaches-section .owl-nav{
-	position:absolute;
-	left:0px;
-	top:-55px;
-	z-index:1;
-	width:100%;
-	transition:all 0.3s ease;
-	-moz-transition:all 0.3s ease;
-	-webkit-transition:all 0.3s ease;
-	-ms-transition:all 0.3s ease;
-	-o-transition:all 0.3s ease;
-}
-
-.coaches-section .owl-nav .owl-prev{
-	position:absolute;
-	left:40px;
-	width:60px;
-	height:28px;
-	opacity:0.50;
-	color:#ffffff;
-	font-size:40px;
-	transition:all 500ms ease;
-	-moz-transition:all 500ms ease;
-	-webkit-transition:all 500ms ease;
-	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	background:url(../images/icons/slider-left-arrow.png) no-repeat;
-}
-
-.coaches-section .owl-nav .owl-next{
-	position:absolute;
-	right:40px;
-	width:60px;
-	height:28px;
-	opacity:0.50;
-	transition:all 500ms ease;
-	-moz-transition:all 500ms ease;
-	-webkit-transition:all 500ms ease;
-	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	background:url(../images/icons/slider-right-arrow.png) no-repeat;
-}
-
-.coaches-section .owl-nav .owl-prev:hover,
-.coaches-section .owl-nav .owl-next:hover{
-	opacity:0.9;
-}
-
-/* Coach Block */
-
-.coach-block{
-	position:relative;
-}
-
-.coach-block .inner-box{
-	position:relative;
-}
-
-.coach-block .inner-box .image{
-	position:relative;
-	overflow:hidden;
-}
-
-.coach-block .inner-box .image img{
-	position:relative;
-	width:100%;
-	display:block;
-}
-
-.coach-block .inner-box .overlay-box{
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:100%;
-	height:100%;
-	text-align:center;
-	/* background-color:rgba(0,0,0,0.50); */
-	transition: -webkit-transform 0.4s ease;
-	transition: transform 0.4s ease;
-	transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-}
-
-.coach-block .inner-box:hover .overlay-box{
-	-webkit-transform: scale(0, 1);
-	-ms-transform: scale(0, 1);
-	transform: scale(0, 1);
-}
-
-.coach-block .inner-box .overlay-inner{
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:100%;
-	height:100%;
-	display:table;
-	vertical-align:middle;
-	padding:10px 0px;
-}
-
-.coach-block .inner-box .overlay-inner .content{
-	position:relative;
-	display:table-cell;
-	vertical-align:middle;
-}
-
-.coach-block .inner-box .overlay-box h4{
-	position:relative;
-	line-height:1.4em;
-	margin-bottom:12px;
-	letter-spacing:2px;
-	text-transform:capitalize;
-}
-
-.coach-block .inner-box .overlay-box h4 a{
-	position:relative;
-	color: #ffffff;
-	text-transform: uppercase;
-}
-
-.coach-block .inner-box .overlay-box-two{
-	position:absolute;
-	left:0px;
-	top:0px;
-	right:0px;
-	bottom:0px;
-	z-index:1;
-	background-color:rgba(0,0,0,0.50);
-	transition: -webkit-transform 0.4s ease;
-	transition: transform 0.4s ease;
-	transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-	-webkit-transform: scale(0, 1);
-	-ms-transform: scale(0, 1);
-	transform: scale(0, 1);
-}
-
-.coach-block .inner-box .image .overlay-box-two .overlay-link-two{
-	position:absolute;
-	left:0px;
-	top:0px;
-	right:0px;
-	bottom:0px;
-	display:block;
-	z-index:-1;
-}
-
-.coach-block .inner-box:hover .overlay-box-two{
-	-webkit-transform: scale(1, 1);
-	-ms-transform: scale(1, 1);
-	transform: scale(1, 1);
-	-webkit-transition-delay: 400ms;
-	-moz-transition-delay: 400ms;
-	-ms-transition-delay: 400ms;
-	-o-transition-delay: 400ms;
-	transition-delay: 400ms;
-}
-
-.coach-block .inner-box .overlay-box-two .content{
-	position:absolute;
-	left:0px;
-	bottom:0px;
-	right:0px;
-	text-align:center;
-	padding:0px 15px 30px;
-}
-
-.coach-block .inner-box .overlay-box-two .content h5{
-	position:relative;
-	line-height:1.2em;
-}
-
-.coach-block .inner-box .overlay-box-two .content h5 a{
-	position:relative;
-	color:#ffffff;
-}
-
-.coach-block .inner-box .overlay-box-two .content .text{
-	position:relative;
-	line-height:1.7em;
-	color:#ffffff;
-	font-size:16px;
-	opacity:0.80;
-	font-weight:300;
-	margin-top:12px;
-	font-family: 'Poppins', sans-serif;
-}
-
-.coach-block .inner-box .overlay-box-two .content .social-box{
-	position:relative;
-	margin-top:15px;
-}
-
-.coach-block .inner-box .overlay-box-two .content .social-box a{
-	position:relative;
-	color:#ffffff;
-	margin:0px 8px;
-	font-size:16px;
-	z-index:999;
-}
-
-/*** 
-
-====================================================================
-	Calculator Section
-====================================================================
-
-***/
-
-.calculator-section{
-	position:relative;
-	padding:150px 0px 140px;
-	background-color:#0c0c0c;
-}
-
-.calculator-section .sec-title{
-	margin-bottom:80px;
-}
-
-.calculator-section .inner-container{
-	position:relative;
-	max-width:900px;
-	margin:0 auto;
-}
-
-.default-form{
-	position:relative;
-	max-width:970px;
-	margin:0 auto;
-}
-
-.default-form .form-group{
-	position:relative;
-	margin-bottom:20px;
-}
-
-.default-form .form-group .data{
-	float:left;
-	font-size:16px;
-	color:#000000;
-	font-weight:400;
-	margin-left:20px;
-	margin-top:18px;
-	font-family: 'Poppins', sans-serif;
-}
-
-.default-form .form-group input[type="text"],
-.default-form .form-group input[type="tel"],
-.default-form .form-group input[type="email"],
-.default-form .form-group select{
-	position:relative;
-	display:block;
-	width:100%;
-	line-height:28px;
-	padding:10px 20px;
-	color:#ffffff;
-	height:60px;
-	font-size:16px;
-	background:none;
-	font-weight:400;
-	border-radius:0px;
-	border:1px solid rgba(255,255,255,0.10);
-	-webkit-transition:all 300ms ease;
-	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;
-	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
-}
-
-.default-form .form-group input[type="text"]:focus,
-.default-form .form-group input[type="tel"]:focus,
-.default-form .form-group input[type="email"]:focus,
-.default-form .form-group textarea:focus{
-	border-color:#666666;
-	background-color:#1a1a1a;
-}
-
-.default-form .form-group textarea{
-	position:relative;
-	display:block;
-	width:100%;
-	line-height:22px;
-	padding:15px 20px;
-	color:#686c6e;
-	height:150px;
-	resize:none;
-	font-size:16px;
-	background:none;
-	font-weight:500;
-	border-radius:0px;
-	border:1px solid rgba(255,255,255,0.10);
-	-webkit-transition:all 300ms ease;
-	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;
-	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
-}
-
-.default-form button{
-	width:100%;
-	cursor:pointer;
-	background:none;
-}
-
-.default-form.style-two .form-group .ui-selectmenu-button.ui-button,
-.default-form.style-two .form-group input,
-.default-form.style-two .form-group textarea{
-	color:#000000;
-	background-color:rgba(242,242,242,0.80);
-}
-
-.default-form.style-two .form-group textarea:focus,
-.default-form.style-two .form-group input:focus{
-	border-color:#000000;
-	background-color:#ffffff;
-}
-
-.default-form.style-two button{
-	width:auto;
-	float:left;
-}
-
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -3579,7 +3219,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:300;
 	font-style:italic;
 	text-align:center;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .testimonial-block-two .inner-box .author-name{
@@ -3590,7 +3230,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:700;
 	text-align:center;
 	text-transform:capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .testimonial-block-two .inner-box .designation{
@@ -3601,7 +3241,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-top:10px;
 	text-align:center;
 	font-weight:400;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .testimonial-section-two .client-thumb-outer{
@@ -3642,15 +3282,15 @@ body.visible-menu-bar .fullscreen-menu{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .testimonial-section-two .client-thumb-outer .owl-item{
-	z-index:0;	
+	z-index:0;
 }
 
 .testimonial-section-two .client-thumb-outer .owl-item.active{
-	z-index:10;	
+	z-index:10;
 }
 
 .testimonial-section-two .client-thumb-outer .client-thumbs-carousel .thumb-item img{
@@ -3663,249 +3303,9 @@ body.visible-menu-bar .fullscreen-menu{
 
 .testimonial-section-two .owl-nav,
 .testimonial-section-two .owl-dots{
-    
+
 }
 
-/*** 
-
-====================================================================
-	News Section
-====================================================================
-
-***/
-
-.news-section{
-	position:relative;
-	padding:150px 0px 150px;
-	background-color:#0c0c0c;
-}
-
-.news-section .sec-title{
-	margin-bottom:80px;
-}
-
-.news-section .owl-dots{
-	display:none;
-}
-
-.news-section .owl-nav{
-	position:absolute;
-	left:0px;
-	top:50%;
-	z-index:1;
-	width:100%;
-	margin-top:-10px;
-	transition:all 0.3s ease;
-	-moz-transition:all 0.3s ease;
-	-webkit-transition:all 0.3s ease;
-	-ms-transition:all 0.3s ease;
-	-o-transition:all 0.3s ease;
-}
-
-.news-section .owl-nav .owl-prev{
-	position:absolute;
-	width:60px;
-	height:28px;
-	left:-90px;
-	opacity:0.50;
-	color:#ffffff;
-	font-size:40px;
-	transition:all 500ms ease;
-	-moz-transition:all 500ms ease;
-	-webkit-transition:all 500ms ease;
-	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	background:url(../images/icons/slider-left-arrow.png) no-repeat;
-}
-
-.news-section .owl-nav .owl-next{
-	position:absolute;
-	width:60px;
-	height:28px;
-	right:-90px;
-	color:#ffffff;
-	font-size:40px;
-	color:#ffffff;
-	opacity:0.50;
-	transition:all 500ms ease;
-	-moz-transition:all 500ms ease;
-	-webkit-transition:all 500ms ease;
-	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	background:url(../images/icons/slider-right-arrow.png) no-repeat;
-}
-
-.news-section .owl-nav .owl-prev:hover,
-.news-section .owl-nav .owl-next:hover{
-	opacity:1;
-}
-
-.news-section.style-two .owl-nav{
-	top:-70px;
-	right:0px;
-	left:50%;
-	max-width:1170px;
-	margin-left:-585px;
-}
-
-.news-section.style-two .owl-nav .owl-prev{
-	right:90px;
-	left:auto;
-}
-
-.news-section.style-two .owl-nav .owl-next{
-	right:0px;
-	left:auto;
-	top:-30px;
-}
-
-.news-section .lower-text{
-	position:relative;
-	margin-top:50px;
-}
-
-.news-section .view-all{
-	position:relative;
-	color:#ffffff;
-	font-size:16px;
-	font-weight:600;
-	z-index:1;
-	letter-spacing:3px;
-	display:inline-block;
-	text-transform:uppercase;
-	border-bottom:1px solid transparent;
-	font-family: 'Poppins', sans-serif;
-	-webkit-transition: -webkit-transform 0.4s ease;
-	transition: -webkit-transform 0.4s ease;
-	transition: transform 0.4s ease;
-	transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-}
-
-.news-section .view-all:hover{
-	border-color:#ffffff;
-}
-
-/* News Block */
-
-.news-block{
-	position:relative;
-	margin-bottom:30px;
-}
-
-.news-block .inner-box{
-	position:relative;
-}
-
-.news-block .inner-box .overlay-link{
-	position:absolute;
-	left:0px;
-	top:0px;
-	right:0px;
-	bottom:0px;
-	z-index:1;
-	display:block;
-}
-
-.news-block .inner-box .overlay-link{
-	position:absolute;
-	left:0px;
-	top:0px;
-	right:0px;
-	bottom:0px;
-	display:block;
-	z-index:2;
-}
-
-.news-block .inner-box .image{
-	position:relative;
-	overflow:hidden;
-}
-
-.news-block .inner-box .image img{
-	position:relative;
-	width:100%;
-	display:block;
-	transition: all 900ms ease;
-    -moz-transition: all 900ms ease;
-    -webkit-transition: all 900ms ease;
-    -ms-transition: all 900ms ease;
-    -o-transition: all 900ms ease;
-}
-
-.news-block .inner-box:hover .image img{
-	transform:scale(1.04,1.04);
-}
-
-.news-block .inner-box .image:before{
-	position:absolute;
-	content:'';
-	left:0px;
-	top:0px;
-	right:0px;
-	bottom:0px;
-	z-index:1;
-	background-color:rgba(0,0,0,0.30);
-}
-
-.news-block .inner-box .image .post-date{
-	position:absolute;
-	left:10px;
-	top:10px;
-	z-index:2;
-	width:70px;
-	height:75px;
-	color:#e6e6e6;
-	font-weight:300;
-	line-height:2em;
-	padding:14px 0px;
-	text-align:center;
-	letter-spacing:1px;
-	display:inline-block;
-	text-transform:uppercase;
-	background-color:rgba(0,0,0,0.90);
-	font-family: 'Poppins', sans-serif;
-	-webkit-transition:all 300ms ease;
-	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;
-	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;
-}
-
-.news-block .inner-box .image .post-date span{
-	position:relative;
-	display:block;
-	font-weight:700;
-	font-size:32px;
-}
-
-.news-block .inner-box .image .content{
-	position:absolute;
-	left:0px;
-	bottom:0px;
-	right:0px;
-	z-index:2;
-	padding:0px 40px 40px;
-}
-
-.news-block .inner-box .image .content h4{
-	position:relative;
-	font-weight:700;
-	line-height:1.2em;
-}
-
-.news-block .inner-box .image .content h4 a{
-	position:relative;
-	color:#ffffff;
-	font-family: 'Poppins', sans-serif;
-}
-
-.news-block .inner-box:hover .image .content h4 a{
-	text-decoration:underline;
-}
-
-.news-block.style-two .inner-box .image .content h4{
-	font-size:20px;
-}
 
 /***
 
@@ -3954,7 +3354,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-top:14px;
 	letter-spacing:6px;
 	text-transform:uppercase;
-	font-family: 'MonumentExtended-Regular';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .main-footer .logo-widget{
@@ -3982,7 +3382,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:600;
 	line-height:1.6em;
 	margin-bottom:15px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .main-footer .logo-widget .info-list li span{
@@ -4012,86 +3412,6 @@ body.visible-menu-bar .fullscreen-menu{
 
 .main-footer .logo-widget .info-list li a:hover{
 	opacity:0.5;
-}
-
-/* News Widget */
-
-.main-footer .news-widget .post{
-	position: relative;
-	min-height: 90px;
-	padding-left: 100px;
-	margin-bottom: 20px;
-}
-
-.main-footer .news-widget .post:last-child{
-	margin-bottom: 0;
-}
-
-.main-footer .news-widget .post .thumb{
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 85px;
-	width: 85px;
-	overflow: hidden;
-	background-color: #000000;
-}
-
-.main-footer .news-widget .post .thumb a{
-	display: block;
-}
-
-.main-footer .news-widget .post .thumb img{
-	display: block;
-	width: 100%;
-	height: auto;
-	opacity:0.5;
-	-webkit-transition:all 300ms ease;
-	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;
-	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;
-}
-
-.main-footer .news-widget .post:hover .thumb img{
-	opacity:1;
-}
-
-.main-footer .news-widget .post h5{
-	position: relative;
-	color: #e6e6e6;
-	line-height: 30px;
-	font-weight: 500;
-	font-size:16px;
-	line-height:1.4em;
-	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
-}
-
-.main-footer .news-widget .post h5 a{
-	color:#e6e6e6;
-	opacity:0.60;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
-}
-
-.main-footer .news-widget .post h5 a:hover{
-	opacity:0.90;
-	text-decoration:underline;
-}
-
-.main-footer .news-widget .post .date{
-	position: relative;
-	display: block;
-	font-size: 12px;
-	color: #e6e6e6;
-	line-height:1em;
-	margin-top:10px;
-	opacity:0.20;
-	font-family: 'Poppins', sans-serif;
 }
 
 /* Gallery Widget */
@@ -4131,88 +3451,8 @@ body.visible-menu-bar .fullscreen-menu{
 	border-color:#ffffff;
 }
 
-/* Newsletter Widget */
 
-.main-footer .newsletter-widget .text{
-	position:relative;
-	color:#ffffff;
-	opacity:0.6;
-	font-size:16px;
-	line-height:1.8em;
-	margin-bottom:25px;
-	font-family: 'Poppins', sans-serif;
-}
-
-/* Newslettter Form */
-
-.main-footer .newsletter-form{
-	margin-bottom:35px;
-}
-
-.main-footer .newsletter-form .form-group{
-	position:relative;
-	display:block;
-	margin-bottom:10px;
-}
-
-.main-footer .newsletter-form .form-group input[type="text"],
-.main-footer .newsletter-form .form-group input[type="email"]{
-	position:relative;
-	display:block;
-	width:100%;
-	line-height:26px;
-	padding:10px 85px 10px 20px;
-	height:64px;
-	font-size:15px;
-	color:#999999;
-	border-radius:0px;
-	background:rgba(0,0,0,0.80);
-	-webkit-transition:all 300ms ease;
-	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;
-	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
-	border:1px solid rgba(255,255,255,0.40);
-}
-
-.main-footer .newsletter-form .form-group input:focus{
-	border-color:rgba(255,255,255,0.80);
-	background-color:#000000;
-}
-
-.main-footer .newsletter-form .form-group button{
-	position:absolute;
-	right:0px;
-	top:0px;
-	width:60px;
-	height:64px;
-	text-align:center;
-	padding:8px 20px;
-	font-size:20px;
-	color:#000000;
-	display:inline-block;
-	cursor:pointer;
-	background:#ffffff;
-}
-
-.main-footer .footer-bottom{
-	padding:18px 0px;
-	text-align:center;
-	border-top:1px solid rgba(255,255,255,0.20);
-}
-
-.main-footer .footer-bottom .copyright{
-	position:relative;
-	color:#ffffff;
-	opacity:0.5;
-	font-size:14px;
-	font-weight:300;
-	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
-}
-
-/*** 
+/***
 
 ====================================================================
 	Banner Section Two
@@ -4365,7 +3605,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .banner-section-two .active .content-boxed .text{
@@ -4412,7 +3652,7 @@ body.visible-menu-bar .fullscreen-menu{
 	padding-top:18px;
 	margin-left:40px;
 	color:rgba(255,255,255,0.50);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .banner-section-two .content-boxed .btns-box .play-box .play-btn{
@@ -4648,7 +3888,7 @@ body.visible-menu-bar .fullscreen-menu{
 	z-index: 9;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section One
@@ -4679,7 +3919,7 @@ body.visible-menu-bar .fullscreen-menu{
 
 .fluid-section-one .image-column .image-box{
 	position:relative;
-	display:none;	
+	display:none;
 }
 
 .fluid-section-one .image-column .image-box img{
@@ -4709,7 +3949,7 @@ body.visible-menu-bar .fullscreen-menu{
 	line-height:1em;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #e5e5e5;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fluid-section-one .content-column h2{
@@ -4729,7 +3969,7 @@ body.visible-menu-bar .fullscreen-menu{
 	opacity:0.40;
 	margin-top:25px;
 	margin-bottom:25px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fluid-section-one .content-column .btn-box .theme-btn{
@@ -4750,7 +3990,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fluid-section-one .content-column .btn-box .read-more:hover{
@@ -4781,7 +4021,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-o-transition:all 500ms ease;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #e5e5e5;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fluid-section-one .content-column .gym-list li a:hover{
@@ -4789,7 +4029,7 @@ body.visible-menu-bar .fullscreen-menu{
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section Two
@@ -4810,11 +4050,11 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:170px;
 	font-weight:700;
 	line-height:130px;
-	
+
 	color: transparent;
 	-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #e5e5e5;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fluid-section-two .outer-container{
@@ -4830,7 +4070,7 @@ body.visible-menu-bar .fullscreen-menu{
 	height:100%;
 	background-repeat:no-repeat;
 	background-position:center center;
-	background-size:cover;	
+	background-size:cover;
 }
 
 .fluid-section-two .image-column:before{
@@ -4850,7 +4090,7 @@ body.visible-menu-bar .fullscreen-menu{
 
 .fluid-section-two .image-column .image-box{
 	position:relative;
-	display:none;	
+	display:none;
 }
 
 .fluid-section-two .image-column .image-box img{
@@ -4886,10 +4126,10 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:16px;
 	line-height:1.8em;
 	margin-bottom:30px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Section Two
@@ -4967,7 +4207,7 @@ body.visible-menu-bar .fullscreen-menu{
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section Three
@@ -4994,7 +4234,7 @@ body.visible-menu-bar .fullscreen-menu{
 	height:100%;
 	background-repeat:no-repeat;
 	background-position:center center;
-	background-size:cover;	
+	background-size:cover;
 }
 
 .fluid-section-three .image-column:before{
@@ -5014,7 +4254,7 @@ body.visible-menu-bar .fullscreen-menu{
 
 .fluid-section-three .image-column .image-box{
 	position:relative;
-	display:none;	
+	display:none;
 }
 
 .fluid-section-three .image-column .image-box img{
@@ -5059,14 +4299,14 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#000000;
 	opacity:0.10;
 	font-size:200px;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fluid-section-three .content-column .theme-btn{
 	margin-top:50px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Timing Section
@@ -5118,7 +4358,7 @@ body.visible-menu-bar .fullscreen-menu{
 	text-transform:uppercase;
 	transition:all 500ms ease;
 	border-bottom:2px solid transparent;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .timing-section .timing-info-tabs .timing-tabs .tab-btns .tab-btn.active-btn{
@@ -5127,7 +4367,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .timing-section .timing-info-tabs .timing-tabs .tabs-content{
-	position:relative;	
+	position:relative;
 }
 
 .timing-section .timing-info-tabs .timing-tabs .tabs-content .tab{
@@ -5136,10 +4376,10 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .timing-section .timing-info-tabs .timing-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section Four
@@ -5166,7 +4406,7 @@ body.visible-menu-bar .fullscreen-menu{
 	height:100%;
 	background-repeat:no-repeat;
 	background-position:center center;
-	background-size:cover;	
+	background-size:cover;
 }
 
 .fluid-section-four .image-column:before{
@@ -5186,7 +4426,7 @@ body.visible-menu-bar .fullscreen-menu{
 
 .fluid-section-four .image-column .image-box{
 	position:relative;
-	display:none;	
+	display:none;
 }
 
 .fluid-section-four .image-column .image-box img{
@@ -5208,7 +4448,7 @@ body.visible-menu-bar .fullscreen-menu{
 	padding:100px 0px 75px 80px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Accordion Style
@@ -5226,7 +4466,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .accordion-box .block.active-block{
-	
+
 }
 
 .accordion-box .block .acc-btn{
@@ -5238,11 +4478,11 @@ body.visible-menu-bar .fullscreen-menu{
     line-height: 1em;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #e5e5e5;
-    font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .accordion-box .block .acc-btn.active{
-	
+
 }
 
 .accordion-box .block .acc-content{
@@ -5251,7 +4491,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .accordion-box .block .acc-content.current{
-	display:block;	
+	display:block;
 }
 
 .accordion-box .block .content{
@@ -5261,7 +4501,7 @@ body.visible-menu-bar .fullscreen-menu{
 
 .accordion-box .block .content .accordian-text{
 	line-height:1.9em;
-	font-size:16px;	
+	font-size:16px;
 	color:#84858a;
 	font-weight:600;
 }
@@ -5281,7 +4521,7 @@ body.visible-menu-bar .fullscreen-menu{
 	display:block;
 	letter-spacing:2px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .accordion-box .block .content .text{
@@ -5292,7 +4532,7 @@ body.visible-menu-bar .fullscreen-menu{
 	line-height:1.9em;
 	font-size:16px;
 	margin-bottom:25px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .accordion-box .block .content .social-box{
@@ -5331,10 +4571,10 @@ body.visible-menu-bar .fullscreen-menu{
 	padding-bottom:6px;
 	text-transform:uppercase;
 	border-bottom:2px solid #ffffff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section Five
@@ -5388,7 +4628,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:900;
 	margin-bottom:20px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fluid-section-five .image-column .table-outer .table-boxed{
@@ -5417,7 +4657,7 @@ body.visible-menu-bar .fullscreen-menu{
 	float:left;
 	padding:15px 15px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fluid-section-five .image-column .table-outer .table-boxed .table-content .title .col:last-child{
@@ -5440,7 +4680,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:500;
 	padding:15px 15px;
 	border-bottom:1px solid #b3b3b3;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .fluid-section-five .image-column .table-outer .table-boxed ul li:last-child{
@@ -5497,7 +4737,7 @@ body.visible-menu-bar .fullscreen-menu{
 	padding:0px 60px 50px 80px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section Three
@@ -5557,7 +4797,7 @@ body.visible-menu-bar .fullscreen-menu{
 	top:auto;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section Six
@@ -5586,7 +4826,7 @@ body.visible-menu-bar .fullscreen-menu{
 
 .fluid-section-six .image-column .image-box{
 	position:relative;
-	display:none;	
+	display:none;
 }
 
 .fluid-section-six .image-column .image-box img{
@@ -5608,7 +4848,7 @@ body.visible-menu-bar .fullscreen-menu{
 	padding:100px 0px 75px 60px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Page Title
@@ -5661,7 +4901,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:16px;
 	font-weight:400;
 	text-transform:capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .page-breadcrumb li:after{
@@ -5692,7 +4932,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-webkit-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
 	-o-transition:all 0.3s ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .page-breadcrumb li a:hover{
@@ -5752,7 +4992,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-bottom:50px;
 	letter-spacing:4px;
 	text-transform:uppercase;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .comming-soon .content .content-inner h4 span{
@@ -5762,7 +5002,7 @@ body.visible-menu-bar .fullscreen-menu{
     -webkit-text-stroke-color: #fff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Countdown style
@@ -5794,7 +5034,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:300;
 	margin-bottom:30px;
 	letter-spacing:2px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .time-counter .time-countdown .counter-column .count{
@@ -5805,10 +5045,10 @@ body.visible-menu-bar .fullscreen-menu{
 	padding:10px 10px;
 	color:#ffffff;
 	letter-spacing:1px;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Page Container
@@ -5859,7 +5099,7 @@ body.visible-menu-bar .fullscreen-menu{
     line-height: 1.3em;
 	padding-bottom:12px;
     text-transform: uppercase;
-	font-family: 'MonumentExtended-Regular';
+	font-family: 'Montserrat', sans-serif;
 	border-bottom:1px solid rgba(255,255,255,0.10);
 }
 
@@ -5991,7 +5231,7 @@ body.visible-menu-bar .fullscreen-menu{
 	position:relative;
 	color:#ffffff;
 	line-height:1.1em;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .trainer-detail .inner-box .title-box .category{
@@ -6002,7 +5242,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-top:20px;
 	padding-bottom:25px;
 	border-bottom:1px solid #3d3d3d;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .trainer-detail .inner-box .title-box .category span{
@@ -6017,7 +5257,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-weight: 300;
     line-height: 1.8em;
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .trainer-detail .inner-box .column .image img{
@@ -6035,7 +5275,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-top:70px;
 	margin-bottom:80px;
 	border-left:4px solid #ffffff;
-	font-family: 'MonumentExtended-Regular';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .trainer-detail .inner-box .post-share-options{
@@ -6052,7 +5292,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:300;
 	letter-spacing:3px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .trainer-detail .inner-box .post-share-options .social-box li{
@@ -6077,7 +5317,7 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comment Form
@@ -6093,7 +5333,7 @@ body.visible-menu-bar .fullscreen-menu{
 .comment-form .group-title h3{
 	position:relative;
 	color:#ffffff;
-	margin-bottom:10px;	
+	margin-bottom:10px;
 	text-transform:uppercase;
 }
 
@@ -6105,7 +5345,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-weight: 300;
     line-height: 1.8em;
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .comment-form .form-group{
@@ -6131,7 +5371,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	border:1px solid rgba(255,255,255,0.10);
 }
 
@@ -6161,7 +5401,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .comment-form .theme-btn{
@@ -6176,7 +5416,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:16px;
 	margin-top:18px;
 	margin-left:30px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Bodybuilder Detail */
@@ -6214,7 +5454,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-weight: 300;
     line-height: 1.8em;
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bodybuilder-detail .inner-box .blockquote{
@@ -6226,7 +5466,7 @@ body.visible-menu-bar .fullscreen-menu{
     margin-top: 25px;
     margin-bottom: 40px;
     border-left: 4px solid #ffffff;
-    font-family: 'MonumentExtended-Regular';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .bodybuilder-detail .post-share-options{
@@ -6243,7 +5483,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:300;
 	letter-spacing:3px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .bodybuilder-detail .post-share-options .social-box li{
@@ -6285,7 +5525,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:300;
 	letter-spacing:3px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
@@ -6351,7 +5591,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-size: 16px;
     line-height: 1.8em;
     margin-bottom: 25px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar .newsletter-form{
@@ -6381,7 +5621,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	border:1px solid rgba(255,255,255,0.40);
 }
 
@@ -6400,7 +5640,7 @@ body.visible-menu-bar .fullscreen-menu{
 	background:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Blog Page Section
@@ -6432,7 +5672,7 @@ body.visible-menu-bar .fullscreen-menu{
 	letter-spacing:2px;
 	display:inline-block;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	-webkit-transition: -webkit-transform 0.4s ease;
 	transition: -webkit-transform 0.4s ease;
 	transition: transform 0.4s ease;
@@ -6443,7 +5683,7 @@ body.visible-menu-bar .fullscreen-menu{
 	text-decoration:underline;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Blog Classic Section
@@ -6504,7 +5744,7 @@ body.visible-menu-bar .fullscreen-menu{
 .news-block-two .inner-box .lower-content h4 a{
 	position:relative;
 	color:#ffffff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .news-block-two .inner-box .lower-content h4 a:hover{
@@ -6522,7 +5762,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:16px;
 	margin-right:20px;
 	display:inline-block;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .news-block-two .inner-box .lower-content .post-info li span{
@@ -6537,7 +5777,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-weight: 300;
     line-height: 1.8em;
     margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .blog-classic-section .lower-text{
@@ -6553,7 +5793,7 @@ body.visible-menu-bar .fullscreen-menu{
 	letter-spacing:2px;
 	display:inline-block;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	-webkit-transition: -webkit-transform 0.4s ease;
 	transition: -webkit-transform 0.4s ease;
 	transition: transform 0.4s ease;
@@ -6613,7 +5853,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:16px;
 	line-height:1.4em;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar .news-widget .post h5 a{
@@ -6639,7 +5879,7 @@ body.visible-menu-bar .fullscreen-menu{
 	line-height:1em;
 	margin-top:10px;
 	opacity:0.20;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar .blog-cat{
@@ -6656,7 +5896,7 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#4c4c4c;
 	font-size:16px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
@@ -6699,7 +5939,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:34px;
 	line-height:1.3em;
 	margin-bottom:50px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .blog-detail .inner-box .image{
@@ -6725,7 +5965,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:16px;
 	margin-right:20px;
 	display:inline-block;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .blog-detail .inner-box .post-info li span{
@@ -6740,7 +5980,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-weight: 300;
     line-height: 1.8em;
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .blog-detail .inner-box .video-box{
@@ -6756,7 +5996,7 @@ body.visible-menu-bar .fullscreen-menu{
     margin-top: 75px;
     margin-bottom: 75px;
     border-left: 4px solid #ffffff;
-    font-family: 'MonumentExtended-Regular';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .blog-detail .post-share-options{
@@ -6773,7 +6013,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:300;
 	letter-spacing:3px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .blog-detail .post-share-options .social-box li{
@@ -6815,7 +6055,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:300;
 	letter-spacing:3px;
 	text-transform:uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
@@ -6868,7 +6108,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:700;
 	line-height:1em;
 	margin-bottom:0px;
-	font-family: 'MonumentExtended-Ultrabold';
+	font-family: 'Montserrat', sans-serif;
 }
 
 .error-section .image{
@@ -6876,7 +6116,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-top:-120px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Page Section
@@ -6913,7 +6153,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:600;
 	line-height:1.6em;
 	margin-bottom:15px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .contact-page-section .info-column .info-list li:last-child{
@@ -6946,7 +6186,7 @@ body.visible-menu-bar .fullscreen-menu{
 	opacity:0.5;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Form
@@ -6955,13 +6195,13 @@ body.visible-menu-bar .fullscreen-menu{
 ***/
 
 .contact-form{
-	
+
 }
 
 .contact-form .group-title h3{
 	position:relative;
 	color:#ffffff;
-	margin-bottom:10px;	
+	margin-bottom:10px;
 	text-transform:uppercase;
 }
 
@@ -6973,7 +6213,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-weight: 300;
     line-height: 1.8em;
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contact-form .form-group{
@@ -6999,7 +6239,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	border:1px solid rgba(255,255,255,0.10);
 }
 
@@ -7029,7 +6269,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .contact-form .theme-btn{
@@ -7044,7 +6284,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:16px;
 	margin-top:18px;
 	margin-left:30px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Shop Cat */
@@ -7063,7 +6303,7 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#808080;
 	font-size:18px;
 	display:block;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
@@ -7094,7 +6334,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:16px;
 	font-weight:400;
 	margin-top:10px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .range-slider-one .title:before{
@@ -7105,7 +6345,7 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#848484;
 	font-size:16px;
 	font-weight:300;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .range-slider-one .input{
@@ -7115,7 +6355,7 @@ body.visible-menu-bar .fullscreen-menu{
 	padding-left:8px;
 	margin-top:10px;
     position: relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .range-slider-one .input input{
@@ -7138,7 +6378,7 @@ body.visible-menu-bar .fullscreen-menu{
 .range-slider-one .ui-slider .ui-slider-range{
 	top:0px;
 	height:5px;
-	background:#cccccc;	
+	background:#cccccc;
 }
 
 .range-slider-one .ui-state-default,
@@ -7149,7 +6389,7 @@ body.visible-menu-bar .fullscreen-menu{
 	border:4px solid #ffffff;
 	background:#000000;
 	border-radius:0px;
-	cursor:pointer;	
+	cursor:pointer;
 }
 
 .range-slider-one .theme-btn{
@@ -7158,7 +6398,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .range-slider-one .theme-btn:hover{
-	
+
 }
 
 /*Sidebar Realated Posts */
@@ -7185,7 +6425,7 @@ body.visible-menu-bar .fullscreen-menu{
 
 .sidebar .related-posts .post .post-thumb img{
 	display:block;
-	width:100%;	
+	width:100%;
 }
 
 .sidebar .related-posts .post h4{
@@ -7195,7 +6435,7 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#ffffff;
 	line-height:1.3em;
 	text-transform:capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar .related-posts .post h4 a{
@@ -7218,7 +6458,7 @@ body.visible-menu-bar .fullscreen-menu{
 	letter-spacing:1px;
 	font-weight:400;
 	color:#ffffff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Shop Section */
@@ -7236,7 +6476,7 @@ body.visible-menu-bar .fullscreen-menu{
 	position:relative;
 	color:#808080;
 	font-size:18px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .shop-section .items-sorting .total-items span{
@@ -7357,7 +6597,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:22px;
 	font-weight:500;
 	margin-bottom:6px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .shop-item .inner-box .lower-content h3 a{
@@ -7381,7 +6621,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:18px;
 	font-weight:300;
 	opacity:0.5;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .shop-item .inner-box .lower-content .cart{
@@ -7408,7 +6648,7 @@ body.visible-menu-bar .fullscreen-menu{
 	display:inline-block;
 	text-transform:uppercase;
 	border-bottom:1px solid #ffffff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	-webkit-transition: -webkit-transform 0.4s ease;
 	transition: -webkit-transform 0.4s ease;
 	transition: transform 0.4s ease;
@@ -7509,12 +6749,12 @@ body.visible-menu-bar .fullscreen-menu{
 
 .product-details .image-column .owl-dots,
 .product-details .image-column .owl-nav{
-	display:none;	
+	display:none;
 }
 
 .product-details .basic-details .details-header{
 	position:relative;
-	margin-bottom:0px;	
+	margin-bottom:0px;
 }
 
 .product-details .basic-details .details-header h5{
@@ -7523,11 +6763,11 @@ body.visible-menu-bar .fullscreen-menu{
 	line-height:1.4em;
 	color:#ffffff;
 	margin-bottom:15px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .product-details .basic-details .details-header h5 a{
-	color:#333333;	
+	color:#333333;
 }
 
 .product-details .basic-details .details-header .rating{
@@ -7542,7 +6782,7 @@ body.visible-menu-bar .fullscreen-menu{
 
 .product-details .basic-details .details-header .rating .fa{
 	display:inline-block;
-	margin-right:1px;	
+	margin-right:1px;
 }
 
 .product-details .basic-details .details-header .rating .fa.light{
@@ -7557,7 +6797,7 @@ body.visible-menu-bar .fullscreen-menu{
 	line-height:24px;
 	letter-spacing:1px;
 	margin-bottom:20px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .product-details .basic-details .text{
@@ -7568,7 +6808,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-weight: 400;
     line-height: 1.7em;
 	margin-bottom:25px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .product-details .basic-details .availablity{
@@ -7613,24 +6853,24 @@ body.visible-menu-bar .fullscreen-menu{
 	line-height:24px;
 	padding:10px 32px !important;
 	height:54px !important;
-	box-shadow:none !important;	
+	box-shadow:none !important;
 	background-color:#000000;
 	color:#ffffff;
 	font-size:24px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	border-color:rgba(255,255,255,0.20);
 }
 
 .product-details .basic-details .bootstrap-touchspin .input-group-btn-vertical > .btn,
 .cart-section .bootstrap-touchspin .input-group-btn-vertical > .btn{
 	padding:13px 10px;
-	background:none;	
+	background:none;
 	margin-left:-28px;
 }
 
 .product-details .bootstrap-touchspin .input-group-btn-vertical i,
 .cart-section .bootstrap-touchspin .input-group-btn-vertical i{
-	top:1px;	
+	top:1px;
 }
 
 .bootstrap-touchspin .glyphicon-chevron-up:before {
@@ -7659,7 +6899,7 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#ffffff;
 	font-size:18px;
 	margin-bottom:15px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .shop-list li strong{
@@ -7691,10 +6931,10 @@ body.visible-menu-bar .fullscreen-menu{
 	position:relative;
 	color:#ffffff;
 	margin-bottom:20px;
-	font-family: 'MonumentExtended-Regular';
+	font-family: 'Montserrat', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Cart Section style
@@ -7709,7 +6949,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .cart-section .cart-outer{
-	position:relative;	
+	position:relative;
 }
 
 .cart-section .table-outer{
@@ -7745,12 +6985,12 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#ffffff;
 	font-size:26px;
 	text-transform:capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .cart-table thead tr th.prod-column{
 	text-align:left;
-	padding-left:0px;	
+	padding-left:0px;
 }
 
 .cart-table tbody tr td{
@@ -7776,14 +7016,14 @@ body.visible-menu-bar .fullscreen-menu{
 
 .column.default-column .cart-table tbody tr .qty{
 	width:110px;
-	padding-right:20px;	
+	padding-right:20px;
 }
 
 .cart-table tbody tr .prod-column .column-box .prod-thumb{
 	position:absolute;
 	width:100px;
 	left:0px;
-	top:0px;	
+	top:0px;
 }
 
 .cart-table tbody tr .prod-column .column-box .prod-thumb img{
@@ -7795,15 +7035,15 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#ffffff;
 	font-weight:500;
 	margin-bottom:5px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .cart-table tbody tr .sub-total{
 	font-weight:400;
-	color:#ffffff;	
+	color:#ffffff;
 	font-size:18px;
 	padding-left:20px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .cart-table tbody tr .remove-btn{
@@ -7841,11 +7081,11 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .cart-table tbody tr .remove{
-	
+
 }
 
 .cart-table tbody tr .remove-btn:hover{
-	
+
 }
 
 .cart-table tbody tr .remove-btn:hover .fa{
@@ -7854,7 +7094,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .cart-table tbody tr td{
-	vertical-align:middle;	
+	vertical-align:middle;
 }
 
 .cart-table tbody tr td.price{
@@ -7862,7 +7102,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:400;
 	color:#ffffff;
 	padding-left:10px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .cart-table tbody tr td .quantity-spinner{
@@ -7916,7 +7156,7 @@ body.visible-menu-bar .fullscreen-menu{
 .cart-section .apply-coupon .form-group{
 	position:relative;
 	float:left;
-	margin-right:20px;	
+	margin-right:20px;
 }
 
 .cart-section .apply-coupon .form-group .coupon-btn{
@@ -7936,7 +7176,7 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#ffffff;
 	background:none;
 	font-size:14px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .cart-section .estimate-form{
@@ -7954,7 +7194,7 @@ body.visible-menu-bar .fullscreen-menu{
 
 .cart-section .estimate-form .row{
 	margin-left:-7px;
-	margin-right:-7px;	
+	margin-right:-7px;
 }
 
 .cart-section .estimate-form .row .form-group{
@@ -7981,12 +7221,12 @@ body.visible-menu-bar .fullscreen-menu{
 
 .bootstrap-touchspin .input-group-btn-vertical > .btn{
 	height:24px;
-	background:#e9e9e9;	
+	background:#e9e9e9;
 }
 
 .bootstrap-touchspin .input-group-btn-vertical i{
 	left:6px;
-	top:6px;	
+	top:6px;
 }
 
 .cart-total-box{
@@ -8001,7 +7241,7 @@ body.visible-menu-bar .fullscreen-menu{
 	line-height:1.4em;
 	margin-bottom:25px;
 	font-weight:500;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .totals-table{
@@ -8014,7 +7254,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight:500;
 	font-size:18px;
 	margin-bottom:15px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .totals-table li .col{
@@ -8026,7 +7266,7 @@ body.visible-menu-bar .fullscreen-menu{
 	float:left;
 	color:#666666;
 	font-size:24px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .totals-table li.total{
@@ -8058,12 +7298,12 @@ body.visible-menu-bar .fullscreen-menu{
 	opacity:0.8;
 	font-weight:500;
 	text-transform:capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .shop-form .form-group{
 	position:relative;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .billing-details .shop-form .sec-title{
@@ -8091,7 +7331,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-weight: 500;
 	margin-bottom:15px;
     text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .billing-details .checkout-order-box .upper-box{
@@ -8110,7 +7350,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:18px;
 	font-weight:300;
 	color:rgba(255,255,255,0.60);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .billing-details .checkout-order-box .upper-box ul li i{
@@ -8146,7 +7386,7 @@ body.visible-menu-bar .fullscreen-menu{
 	font-size:18px;
 	font-weight:300;
 	color:rgba(255,255,255,0.60);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .billing-details .checkout-order-box .lower-box ul li i{
@@ -8175,7 +7415,7 @@ body.visible-menu-bar .fullscreen-menu{
 	margin-top:25px;
 	margin-bottom:20px;
 	color:rgba(255,255,255,0.60);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .billing-details .checkout-order-box button{
@@ -8191,14 +7431,14 @@ body.visible-menu-bar .fullscreen-menu{
 	opacity:0.7;
 	font-size:16px;
 	font-weight:300;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform:capitalize;
 }
 
 .shop-form .form-group .field-label sup{
 	position:relative;
 	top:0px;
-	color:#797979;	
+	color:#797979;
 	font-size:16px;
 }
 
@@ -8220,7 +7460,7 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#ffffff;
 	font-size:16px;
 	font-weight:500;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	border:1px solid rgba(255,255,255,0.12);
 	transition:all 300ms ease;
 	-webkit-transition:all 300ms ease;
@@ -8253,7 +7493,7 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 .shop-form select option{
-	text-indent:15px;	
+	text-indent:15px;
 }
 
 .shop-form .coupon-box{
@@ -8269,7 +7509,7 @@ body.visible-menu-bar .fullscreen-menu{
     font-weight: 500;
 	margin-bottom:25px;
     text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -8296,7 +7536,7 @@ body.visible-menu-bar .fullscreen-menu{
 	color:#ffffff;
 	font-size:14px;
 	font-weight:400;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	border:1px solid rgba(255,255,255,0.12);
 	transition:all 300ms ease;
 	-webkit-transition:all 300ms ease;
@@ -8324,16 +7564,16 @@ body.visible-menu-bar .fullscreen-menu{
 .shop-form textarea{
 	resize:none;
 	height:475px !important;
-	overflow:hidden;	
+	overflow:hidden;
 }
 
 .shop-form input:focus,
 .shop-form select:focus,
 .shop-form textarea:focus{
-	border-color:#ffffff;	
+	border-color:#ffffff;
 }
 
-/* Shop Order Box 
+/* Shop Order Box
 
 .shop-order-box{
 	position:relative;
@@ -8374,16 +7614,16 @@ body.visible-menu-bar .fullscreen-menu{
 .payment-options{
 	position:relative;
 	margin-top:20px;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .checkout-page .payment-options li{
 	position:relative;
-	margin-bottom:15px;	
+	margin-bottom:15px;
 }
 
 .checkout-page .payment-options li .radio-option{
-	position:relative;		
+	position:relative;
 }
 
 .checkout-page .payment-options li .radio-option label{
@@ -8408,7 +7648,7 @@ body.visible-menu-bar .fullscreen-menu{
 .checkout-page .payment-options li .radio-option input[type="radio"]{
 	position:absolute;
 	left:0px;
-	top:5px;	
+	top:5px;
 }
 
 .checkout-page .payment-options li .radio-option #payment-3{
@@ -8460,14 +7700,14 @@ body.visible-menu-bar .fullscreen-menu{
 	top:-3px;
 	display:inline-block;
 	max-width:100%;
-	padding-left:30px;	
+	padding-left:30px;
 }
 
 .checkout-page .payment-options li .radio-option label img{
 	position:relative;
 	display:inline-block;
 	max-width:100%;
-	padding-left:30px;	
+	padding-left:30px;
 }*/
 
 .place-order .theme-btn{
@@ -8477,7 +7717,7 @@ body.visible-menu-bar .fullscreen-menu{
 .contact-form input.error,
 .contact-form select.error,
 .contact-form textarea.error{
-	border-color:#ff0000 !important;	
+	border-color:#ff0000 !important;
 }
 
 .contact-form label.error{
@@ -8488,10 +7728,10 @@ body.visible-menu-bar .fullscreen-menu{
 	text-transform:uppercase;
 	font-size:12px;
 	color:#ff0000;
-	font-weight:500;	
+	font-weight:500;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Purchase Popup
@@ -8548,18 +7788,18 @@ body.visible-menu-bar .fullscreen-menu{
 	-ms-transition: all 700ms ease;
 	-o-transition: all 700ms ease;
 	-moz-transition: all 700ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .purchase-popup .close-search:hover{
-	opacity:0.70;	
+	opacity:0.70;
 }
 
 .purchase-popup .purchase-form{
 	position:relative;
 	padding:0px 15px 0px;
 	max-width:610px;
-	margin:0 auto;	
+	margin:0 auto;
 	margin-top:150px;
 	padding-bottom:100px;
 }
@@ -8592,7 +7832,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	border:1px solid rgba(255,255,255,0.15);
 }
 
@@ -8630,7 +7870,7 @@ body.visible-menu-bar .fullscreen-menu{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .purchase-form .theme-btn{
@@ -8644,7 +7884,7 @@ body.visible-menu-bar .fullscreen-menu{
 	display:block;
 	margin-top:0px;
 	margin-bottom:20px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .we-are-section.margin{
