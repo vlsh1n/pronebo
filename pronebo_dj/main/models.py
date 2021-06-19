@@ -80,3 +80,16 @@ class Purchase(models.Model):
     class Meta:
         verbose_name = 'Услуги в пакете'
         ordering = ['service', 'pack']
+
+
+class PackPrice(models.Model):
+    service = models.ForeignKey('Item', on_delete=models.SET_NULL, null=True)
+    pack = models.CharField(max_length=255, verbose_name='Пакет')
+    price = models.IntegerField(verbose_name='Стоимость')
+
+    def __str__(self):
+        return self.pack
+
+    class Meta:
+        verbose_name = 'Стоимость пакетов'
+

@@ -104,14 +104,17 @@
 							<span class="icon"><img src="{% static 'images/icons/price-1-icon.svg' %}" alt="" /></span>
 						</div>
 						<ul class="price-list">
-							<li class="hide">Membership Card</li>
-							<li>Health and Fitness Tips</li>
-							<li>Personal Health Solution</li>
-							<li>Diet Plan Included</li>
-							<li class="hide">6 Days a Week</li>
-							<li class="hide">Zumba Classes</li>
+
+							{% for item in econom %}
+							<li class="hide">{{ item.title }}</li>
+							{% endfor %}
+
+							{% for item in econom_hide %}
+							<li class="hide">{{ item.title }}</li>
+							{% endfor %}
+
 						</ul>
-						<div class="price">5000 руб</div>
+						<div class="price">{{ price_econom.price }} руб.</div>
 						<div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></div>
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 from django.core.mail import send_mail
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Item, Images, Faq, Testimonial, Gallery, Purchase
+from .models import Item, Images, Faq, Testimonial, Gallery, Purchase, PackPrice
 from .forms import OrderForm
 
 # Create your views here.
@@ -20,14 +20,25 @@ def faq(request):
 def service(request, slug):
     services = get_object_or_404(Item, slug=slug)
     images = Images.objects.filter(service=services)
-    econom = Purchase.objects.filter(service=services, pack='Эконом')
-    standart = Purchase.objects.filter(service=services, pack='Стандарт')
-    premium = Purchase.objects.filter(service=services, pack='Премиум')
+    econom = Purchase.objects.filter(service=services, pack='Эконом', allow=True)
+    standart = Purchase.objects.filter(service=services, pack='Стандарт', allow=True)
+    premium = Purchase.objects.filter(service=services, pack='Премиум', allow=True)
+    econom_hide = Purchase.objects.filter(service=services, pack='Эконом', allow=False)
+    standart_hide = Purchase.objects.filter(service=services, pack='Стандарт', allow=False)
+    premium_hide = Purchase.objects.filter(service=services, pack='Премиум', allow=False)
+    price_econom = PackPrice.objects.get(service=services, pack='Эконом')
+    price_standart = PackPrice.objects.get(service=services, pack='Стандарт')
+    price_premium = PackPrice.objects.get(service=services, pack='Премиум')
+
     if slug == 'comming-soon':
         return render(request, 'main/commingsoon.html')
     else:
         return render(request, 'main/shop-single.html', {'services': services, 'images': images, 'econom': econom,
-                                                         'standart': standart, 'premium': premium})
+                                                         'standart': standart, 'premium': premium,
+                                                         'econom_hide': econom_hide, 'standart_hide': standart_hide,
+                                                         'premium_hide': premium_hide, 'price_econom': price_econom,
+                                                         'price_standart': price_standart,
+                                                         'price_premium': price_premium})
 
 
 def contact_form(request):

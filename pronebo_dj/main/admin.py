@@ -77,3 +77,12 @@ class PurchaseAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Purchase, PurchaseAdmin)
+
+
+class PackPriceAdmin(admin.ModelAdmin):
+    save_on_top = True
+    list_display = ('id', 'service', 'pack')
+    list_display_links = ('id', 'service', 'pack')
+
+
+admin.site.register(PackPrice, PackPriceAdmin)
