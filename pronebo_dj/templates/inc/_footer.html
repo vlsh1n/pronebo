@@ -1,6 +1,7 @@
+{% load static %}
 	<!-- Main Footer -->
 															<!--710x712-->
-    <footer class="main-footer" style="background-image:url(https://via.placeholder.com/710x712)">
+    <footer class="main-footer" style="background-image:url({% static 'images/pex.png' %})">
 		<div class="auto-container">
         	<!-- Widgets Section -->
             <div class="widgets-section">
@@ -15,12 +16,12 @@
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
 																				<!--230x46-->
-                                    	<a href="{% url 'home' %}"><img src="https://via.placeholder.com/230x46" alt="" /></a>
+                                    	<a href="{% url 'home' %}"><img src="{% static 'images/230x46.png' %}" alt="" /></a>
                                     </div>
 									<!-- Footer Mobile Logo -->
 									<div class="footer-mobile-logo">
 																		<!--180x78-->
-										<a href="{% url 'home' %}"><img src="https://via.placeholder.com/180x78" alt="" title=""></a>
+										<a href="{% url 'home' %}"><img src="{% static 'images/180x78.png' %}" alt="" title=""></a>
 									</div>
 									<ul class="info-list">
 										<li><span>Город:</span>Краснодар</li>
@@ -38,37 +39,6 @@
 								</div>
 							</div>
 
-							<!-- Footer Column -->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget gallery-widget">
-									<h6>Галерея</h6>
-									<div class="widget-content">
-
-										<div class="images-outer clearfix">
-											<!--Image Box-->
-																				<!--320x320--> 																																		<!--80x80-->
-											<figure class="image-box"><a href="https://via.placeholder.com/320x320" class="lightbox-image" data-fancybox="footer-gallery" title="" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a href="https://via.placeholder.com/320x320" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a href="https://via.placeholder.com/320x320" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a href="https://via.placeholder.com/320x320" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a href="https://via.placeholder.com/320x320" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a href="https://via.placeholder.com/320x320" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a href="https://via.placeholder.com/320x320" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a href="https://via.placeholder.com/320x320" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a href="https://via.placeholder.com/320x320" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-										</div>
-
-									</div>
-								</div>
-							</div>
 
 						</div>
 					</div>
@@ -78,7 +48,7 @@
 
 			<!-- Footer Bottom -->
 			<div class="footer-bottom">
-				<div class="copyright">DESIGN BY KADIROV. 2020</div>
+				<div class="copyright">DESIGN BY KADIROV. 2020 | DEVELOPED BY VOLOSHIN. 2021</div>
 			</div>
 
 		</div>

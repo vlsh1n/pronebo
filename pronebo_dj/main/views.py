@@ -1,6 +1,6 @@
 from django.core.mail import send_mail
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Item, Images, Faq, Testimonial
+from .models import Item, Images, Faq, Testimonial, Gallery, Purchase
 from .forms import OrderForm
 
 # Create your views here.
@@ -9,7 +9,8 @@ from .forms import OrderForm
 def index(request):
     faq = Faq.objects.all()
     testimonial = Testimonial.objects.all()
-    return render(request, 'main/index.html', {'faq': faq, 'testimonial': testimonial})
+    gallery = Gallery.objects.all()
+    return render(request, 'main/index.html', {'faq': faq, 'testimonial': testimonial, 'gallery': gallery})
 
 
 def faq(request):
@@ -19,10 +20,14 @@ def faq(request):
 def service(request, slug):
     services = get_object_or_404(Item, slug=slug)
     images = Images.objects.filter(service=services)
+    econom = Purchase.objects.filter(service=services, pack='Эконом')
+    standart = Purchase.objects.filter(service=services, pack='Стандарт')
+    premium = Purchase.objects.filter(service=services, pack='Премиум')
     if slug == 'comming-soon':
         return render(request, 'main/commingsoon.html')
     else:
-        return render(request, 'main/shop-single.html', {'services': services, 'images': images})
+        return render(request, 'main/shop-single.html', {'services': services, 'images': images, 'econom': econom,
+                                                         'standart': standart, 'premium': premium})
 
 
 def contact_form(request):

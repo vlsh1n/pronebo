@@ -61,3 +61,19 @@ class TestimonialAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Testimonial, TestimonialAdmin)
+
+
+class GalleryAdmin(admin.ModelAdmin):
+    save_on_top = True
+
+
+admin.site.register(Gallery, GalleryAdmin)
+
+
+class PurchaseAdmin(admin.ModelAdmin):
+    save_on_top = True
+    list_display = ('id', 'title', 'pack', 'allow')
+    list_display_links = ('id', 'title')
+
+
+admin.site.register(Purchase, PurchaseAdmin)

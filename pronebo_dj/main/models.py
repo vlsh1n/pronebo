@@ -61,4 +61,22 @@ class Testimonial(models.Model):
     class Meta:
         verbose_name = 'Отзыв'
         verbose_name_plural = 'Отзыв(-ов)'
-        ordering = ['id', 'name']
+        ordering = ['id']
+
+
+class Gallery(models.Model):
+    photo = models.ImageField(upload_to='photos/gallery/')
+
+
+class Purchase(models.Model):
+    service = models.ForeignKey('Item', on_delete=models.SET_NULL, null=True)
+    pack = models.CharField(max_length=255, verbose_name='Пакет')
+    title = models.CharField(max_length=255, verbose_name='Название')
+    allow = models.BooleanField(verbose_name='Доступность')
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Услуги в пакете'
+        ordering = ['service', 'pack']

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block seo %} {% endblock %}
 
@@ -7,7 +8,7 @@
 {% block content %}
 	<!--Page Title-->
                                                         <!--1920x720-->
-    <section class="page-title" style="background-image:url(https://via.placeholder.com/1920x720)">
+    <section class="page-title" style="background-image:url({% static 'images/background-services.jpg' %})">
     	<div class="auto-container">
 			<h2>{{ services.title|upper }}</h2>
 			<ul class="page-breadcrumb">
@@ -86,7 +87,79 @@
 	</section>
 	<!-- End Shop Single Section -->
 
-	{% include 'inc/_purchase.html' %}
+<!-- Pricing Section -->
+																						<!--1920x1092-->
+	<section class="pricing-section" id="pricing-section" style="background-image: url({% static 'images/background-purchases.jpg' %})">
+		<div class="auto-container">
+			<div class="sec-title centered">
+				<h2><span>Разновидности</span> Пакетов</h2>
+			</div>
+			<div class="row clearfix">
+
+				<!-- Pricing Block -->
+				<div class="price-block col-lg-4 col-md-4 col-sm-12">
+					<div class="side-text">ЭКОНОМ</div>
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon"><img src="{% static 'images/icons/price-1-icon.svg' %}" alt="" /></span>
+						</div>
+						<ul class="price-list">
+							<li class="hide">Membership Card</li>
+							<li>Health and Fitness Tips</li>
+							<li>Personal Health Solution</li>
+							<li>Diet Plan Included</li>
+							<li class="hide">6 Days a Week</li>
+							<li class="hide">Zumba Classes</li>
+						</ul>
+						<div class="price">5000 руб</div>
+						<div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></div>
+					</div>
+				</div>
+
+				<!-- Pricing Block -->
+				<div class="price-block col-lg-4 col-md-4 col-sm-12">
+					<div class="side-text">PROFESSIONAL</div>
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon"><img src="{% static 'images/icons/price-2-icon.svg' %}" alt="" /></span>
+						</div>
+						<ul class="price-list">
+							<li>Membership Card</li>
+							<li>Health and Fitness Tips</li>
+							<li>Personal Health Solution</li>
+							<li>Diet Plan Included</li>
+							<li class="hide">6 Days a Week</li>
+							<li class="hide">Zumba Classes</li>
+						</ul>
+						<div class="price">35000 руб</div>
+						<div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></div>
+					</div>
+				</div>
+
+				<!-- Pricing Block -->
+				<div class="price-block col-lg-4 col-md-4 col-sm-12">
+					<div class="side-text">ULTIMATE</div>
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon"><img src="{% static 'images/icons/price-3-icon.svg' %}" alt="" /></span>
+						</div>
+						<ul class="price-list">
+							<li>Membership Card</li>
+							<li>Health and Fitness Tips</li>
+							<li>Personal Health Solution</li>
+							<li>Diet Plan Included</li>
+							<li>6 Days a Week</li>
+							<li>Zumba Classes</li>
+						</ul>
+						<div class="price">25000 руб</div>
+						<div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Pricing Section -->
 
 
 {% include 'inc/_contactform.html' %}

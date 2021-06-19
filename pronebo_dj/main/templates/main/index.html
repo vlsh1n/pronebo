@@ -11,7 +11,7 @@
 
 			<div class="slide">
 																		<!--1920x930-->
-				<div class="image-layer" style="background-image:url(https://images.pexels.com/photos/382177/pexels-photo-382177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
+				<div class="image-layer" style="background-image:url({% static 'images/banner-3.jpg' %})"></div>
 				<div class="auto-container">
 					<!-- Content Boxed -->
 					<div class="content-boxed">
@@ -24,7 +24,7 @@
 			</div>
 
 			<div class="slide">
-				<div class="image-layer" style="background-image:url(https://images.pexels.com/photos/39608/tandem-skydivers-skydivers-teamwork-cooperation-39608.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
+				<div class="image-layer" style="background-image:url({% static 'images/banner-1.jpg' %})"></div>
 				<div class="auto-container">
 					<!-- Content Boxed -->
 					<div class="content-boxed">
@@ -38,7 +38,7 @@
 			</div>
 
 			<div class="slide">
-				<div class="image-layer" style="background-image:url(https://images.pexels.com/photos/4843065/pexels-photo-4843065.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
+				<div class="image-layer" style="background-image:url({% static 'images/banner-2.jpg' %})"></div>
 				<div class="auto-container">
 					<!-- Content Boxed -->
 					<div class="content-boxed">
@@ -93,13 +93,17 @@
 		<div class="auto-container">
 			<div class="sec-title centered">
 				<h2><span>Коротко</span> о нас</h2>
-				<div class="text">Специально для Вас наша команда сняла ролик, который поможет нам познакомиться поближе, прочувствовать яркие моменты и отбросить все сомнения :)</div>
+				<div class="text">Специально для Вас мы сняли ролик, который поможет нам познакомиться поближе!
+					<br>Попробуйте прочувствовать всей душой эти яркие моменты и зарядиться энергией вместе с нами.
+					<br> Это поможет вам стать еще на шаг ближе к исполнению своей мечты!
+					<br> Приятного просмотра :)</div>
 			</div>
 
 			<!--Video Box-->
 			<div class="video-box">
 				<figure class="video-image">
-					<img src="https://via.placeholder.com/1170x594" alt="">
+<!--					1170x594-->
+					<img src="https://images.pexels.com/photos/6173322/pexels-photo-6173322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
 				</figure>
 				<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span><img src="{% static 'images/icons/play-icon.png' %}" alt="" /><i class="ripple"></i></span></a>
 			</div>
@@ -113,26 +117,17 @@
 		<div class="outer-container">
 			<div class="row clearfix">
 
+				{% for item in gallery %}
 				<!-- Gallery Block -->
 				<div class="gallery-block">
 					<div class="inner-box">
 						<div class="image">
 						<!--320x320-->
-							<img src="https://via.placeholder.com/320x320" alt="320x320" />
-							<!--932x932-->
-							<a class="overlay-link" href="https://via.placeholder.com/932x932" data-fancybox="images" data-caption=""></a>
-							<!-- Overlay Box -->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<!--932x932-->
-										<a class="plus" href="https://via.placeholder.com/932x932" data-fancybox="images" data-caption=""></a>
-									</div>
-								</div>
-							</div>
+							<img src="{{ item.photo.url }}" alt="" />
 						</div>
 					</div>
 				</div>
+				{% endfor %}
 
 			</div>
 		</div>
