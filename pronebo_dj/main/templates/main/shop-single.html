@@ -106,7 +106,7 @@
 						<ul class="price-list">
 
 							{% for item in econom %}
-							<li class="hide">{{ item.title }}</li>
+							<li>{{ item.title }}</li>
 							{% endfor %}
 
 							{% for item in econom_hide %}
@@ -121,40 +121,46 @@
 
 				<!-- Pricing Block -->
 				<div class="price-block col-lg-4 col-md-4 col-sm-12">
-					<div class="side-text">PROFESSIONAL</div>
+					<div class="side-text">СТАНДАРТ</div>
 					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="icon-box">
 							<span class="icon"><img src="{% static 'images/icons/price-2-icon.svg' %}" alt="" /></span>
 						</div>
 						<ul class="price-list">
-							<li>Membership Card</li>
-							<li>Health and Fitness Tips</li>
-							<li>Personal Health Solution</li>
-							<li>Diet Plan Included</li>
-							<li class="hide">6 Days a Week</li>
-							<li class="hide">Zumba Classes</li>
+
+							{% for item in standart %}
+							<li>{{ item.title }}</li>
+							{% endfor %}
+
+							{% for item in standart_hide %}
+							<li class="hide">{{ item.title }}</li>
+							{% endfor %}
+
 						</ul>
-						<div class="price">35000 руб</div>
+						<div class="price">{{ price_standart.price }} руб.</div>
 						<div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></div>
 					</div>
 				</div>
 
 				<!-- Pricing Block -->
 				<div class="price-block col-lg-4 col-md-4 col-sm-12">
-					<div class="side-text">ULTIMATE</div>
+					<div class="side-text">ПРЕМИУМ</div>
 					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="icon-box">
 							<span class="icon"><img src="{% static 'images/icons/price-3-icon.svg' %}" alt="" /></span>
 						</div>
 						<ul class="price-list">
-							<li>Membership Card</li>
-							<li>Health and Fitness Tips</li>
-							<li>Personal Health Solution</li>
-							<li>Diet Plan Included</li>
-							<li>6 Days a Week</li>
-							<li>Zumba Classes</li>
+
+							{% for item in premium %}
+							<li>{{ item.title }}</li>
+							{% endfor %}
+
+							{% for item in premium_hide %}
+							<li class="hide">{{ item.title }}</li>
+							{% endfor %}
+
 						</ul>
-						<div class="price">25000 руб</div>
+						<div class="price">{{ price_premium.price }} руб.</div>
 						<div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></div>
 					</div>
 				</div>

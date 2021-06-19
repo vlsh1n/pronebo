@@ -18,3 +18,9 @@ def show_services():
 def list_services():
     services = Item.objects.all()
     return {'services': services}
+
+
+@register.inclusion_tag('main/form_list_services.html')
+def ul_services():
+    services = Item.objects.all()
+    return {'services': services}
