@@ -9,7 +9,9 @@ from .models import *
 
 # Creating logic for using ckeditor with Item form in admin page when we create new post
 class ItemAdminForm(forms.ModelForm):
-    content = forms.CharField(widget=CKEditorUploadingWidget())  # In Items table we use ckeditor for contact row
+    content = forms.CharField(widget=CKEditorUploadingWidget())  # In Items table we use ckeditor for content row
+    program = forms.CharField(widget=CKEditorUploadingWidget())
+    restrictions = forms.CharField(widget=CKEditorUploadingWidget())
 
     class Meta:
         model = Item
