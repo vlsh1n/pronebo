@@ -11,6 +11,10 @@ class Item(models.Model):
     content = models.TextField(blank=True, verbose_name='Описание')
     photo = models.ImageField(upload_to='photos/', blank=True)
     price = models.IntegerField(verbose_name='Стоимость')
+    users = models.IntegerField(verbose_name='Количество участников')
+    place = models.CharField(max_length=255, verbose_name='Место')
+    program = models.TextField(blank=True, verbose_name='Программа')
+    restrictions = models.TextField(blank=True, verbose_name='Ограничения')
 
     def get_absolute_url(self):
         return reverse('services', kwargs={'slug': self.slug})
