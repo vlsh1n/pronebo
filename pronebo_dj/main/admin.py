@@ -51,6 +51,7 @@ admin.site.register(Faq, FaqAdmin)
 class ImagesAdmin(admin.ModelAdmin):
     list_display = ('service',)
     save_on_top = True
+    list_filter = ['service']
 
 
 admin.site.register(Images, ImagesAdmin)
@@ -76,6 +77,7 @@ class PurchaseAdmin(admin.ModelAdmin):
     save_on_top = True
     list_display = ('id', 'title', 'pack', 'allow')
     list_display_links = ('id', 'title')
+    list_filter = ['pack']
 
 
 admin.site.register(Purchase, PurchaseAdmin)
@@ -83,8 +85,18 @@ admin.site.register(Purchase, PurchaseAdmin)
 
 class PackPriceAdmin(admin.ModelAdmin):
     save_on_top = True
-    list_display = ('id', 'service', 'pack')
+    list_display = ('id', 'service', 'pack', 'price')
     list_display_links = ('id', 'service', 'pack')
+    list_filter = ['service']
 
 
 admin.site.register(PackPrice, PackPriceAdmin)
+
+
+class PacksAdmin(admin.ModelAdmin):
+    save_on_top = True
+    list_display = ('id', 'title')
+    list_display_links = ('id', 'title')
+
+
+admin.site.register(Packs, PacksAdmin)
