@@ -1,6 +1,9 @@
 from django.core.mail import send_mail
+
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Item, Images, Faq, Testimonial, Gallery, Purchase, PackPrice
+
+from .models import Item, Images, Faq, Testimonial, Gallery, Purchase, PackPrice, Packs
+
 from .forms import OrderForm
 
 # Create your views here.
@@ -20,15 +23,33 @@ def faq(request):
 def service(request, slug):
     services = get_object_or_404(Item, slug=slug)
     images = Images.objects.filter(service=services)
-    econom = Purchase.objects.filter(service=services, pack='Эконом', allow=True)
-    standart = Purchase.objects.filter(service=services, pack='Стандарт', allow=True)
-    premium = Purchase.objects.filter(service=services, pack='Премиум', allow=True)
-    econom_hide = Purchase.objects.filter(service=services, pack='Эконом', allow=False)
-    standart_hide = Purchase.objects.filter(service=services, pack='Стандарт', allow=False)
-    premium_hide = Purchase.objects.filter(service=services, pack='Премиум', allow=False)
-    price_econom = PackPrice.objects.get(service=services, pack='Эконом')
-    price_standart = PackPrice.objects.get(service=services, pack='Стандарт')
-    price_premium = PackPrice.objects.get(service=services, pack='Премиум')
+    pack_econom = Packs.objects.get(pk=1)
+    pack_standart = Packs.objects.get(pk=2)
+    pack_premium = Packs.objects.get(pk=3)
+    econom = Purchase.objects.filter(service=services, pack=pack_econom, allow=True)
+    standart = Purchase.objects.filter(service=services, pack=pack_standart, allow=True)
+    premium = Purchase.objects.filter(service=services, pack=pack_premium, allow=True)
+    econom_hide = Purchase.objects.filter(service=services, pack=pack_econom, allow=False)
+    standart_hide = Purchase.objects.filter(service=services, pack=pack_standart, allow=False)
+    premium_hide = Purchase.objects.filter(service=services, pack=pack_premium, allow=False)
+    price_econom = PackPrice.objects.get(service=services, pack=pack_econom)
+    price_standart = PackPrice.objects.get(service=services, pack=pack_standart)
+    price_premium = PackPrice.objects.get(service=services, pack=pack_premium)
+
+    if request.method == 'POST':
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            number = form.cleaned_data['number']
+            service = form.cleaned_data['service']
+            pack = form.cleaned_data['pack']
+            message = form.cleaned_data['message']
+            recipients = ['voloshinw@gmail.com']
+            send_mail(name, email, number, service, pack, message, recipients)
+            redirect('home')
+    else:
+        form = OrderForm()
 
     if slug == 'comming-soon':
         return render(request, 'main/commingsoon.html')
@@ -38,25 +59,4 @@ def service(request, slug):
                                                          'econom_hide': econom_hide, 'standart_hide': standart_hide,
                                                          'premium_hide': premium_hide, 'price_econom': price_econom,
                                                          'price_standart': price_standart,
-                                                         'price_premium': price_premium})
-
-
-def contact_form(request):
-    if request.method == 'POST':
-        form = OrderForm(request.POST)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            number = form.cleaned_data['number']
-            service = form.cleaned_data['service']
-            message = form.cleaned_data['message']
-            recipients = ['voloshinw@gmail.com']
-            send_mail(name, email, number, service, message, recipients)
-            redirect('home')
-    else:
-        form = OrderForm()
-    return render(request, 'inc/_contactform.html', {'form': form})
-
-
-def test(request):
-    return render(request, 'main/test.html')
+                                                         'price_premium': price_premium, 'form': form})
