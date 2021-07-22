@@ -62,7 +62,7 @@
                                     <div class="pull-left">
                                         <!--Btns Box-->
                                         <div class="btns-box">
-                                            <a href="#pricing-section" class="theme-btn btn-style-one"><span class="txt">ОСТАВИТЬ ЗАЯВКУ &ensp;<i class="flaticon-shopping-cart-3"></i></span></a>
+                                            <a href="#pricing-section" class="theme-btn btn-style-one"><span class="txt">ПОСМОТРЕТЬ ПАКЕТЫ &ensp;<i class="flaticon-shopping-cart-3"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@
 
 						</ul>
 						<div class="price">{{ price_econom.price }} руб.</div>
-						<div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></div>
+						<a href="{% url 'form' %}" class="theme-btn btn-style-one"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></a>
 					</div>
 				</div>
 
@@ -138,7 +138,7 @@
 
 						</ul>
 						<div class="price">{{ price_standart.price }} руб.</div>
-						<div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></div>
+						<a href="{% url 'form' %}" class="theme-btn btn-style-one"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></a>
 					</div>
 				</div>
 
@@ -161,7 +161,7 @@
 
 						</ul>
 						<div class="price">{{ price_premium.price }} руб.</div>
-						<div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></div>
+						<a href="{% url 'form' %}" class="theme-btn btn-style-one"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></a>
 					</div>
 				</div>
 
@@ -169,9 +169,6 @@
 		</div>
 	</section>
 	<!-- End Pricing Section -->
-
-
-{% include 'inc/_contactform.html' %}
 
 {% endblock %}
 
