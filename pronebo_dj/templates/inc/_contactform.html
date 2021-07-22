@@ -12,7 +12,7 @@
 			</div>
 
 			<!-- Default Form -->
-			<form method="post" action="{% url 'home' %}">
+			<form action="{% url 'form' %}" method="post">
 				{% csrf_token %}
 
 				<div class="row clearfix">
@@ -23,7 +23,7 @@
 
 					<div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
 						<span class="data">* Все личные данные зашифрованы</span>
-						<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></button>
+						<button type="submit" class="theme-btn btn-style-one"><span class="txt">ОСТАВИТЬ ЗАЯВКУ</span></button>
 					</div>
 
 				</div>
