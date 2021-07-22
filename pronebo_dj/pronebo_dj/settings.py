@@ -203,3 +203,10 @@ CKEDITOR_CONFIGS = {
         ]),
     }
 }
+
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'pronebo@list.ru'
+EMAIL_HOST_PASSWORD = 'obenorpbest'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
