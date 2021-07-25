@@ -15,6 +15,8 @@ class Item(models.Model):
     place = models.CharField(max_length=255, verbose_name='Место')
     program = models.TextField(blank=True, verbose_name='Программа')
     restrictions = models.TextField(blank=True, verbose_name='Ограничения')
+    seo_desc = models.CharField(max_length=255, blank=True, verbose_name='SEO-описание страницы')
+    seo_keywords = models.CharField(max_length=1000, blank=True, null=True, verbose_name='SEO-ключевые слова')
 
     def get_absolute_url(self):
         return reverse('services', kwargs={'slug': self.slug})

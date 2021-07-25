@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block seo %} {% endblock %}
+{% block seo %}
+<meta name="description" content="{{ services.seo_desc }}">
+<meta name="keywords" content="{{ services.seo_keywords }}">
+{% endblock %}
 
 {% block title %} {{ services.title }} - PROnebo {% endblock %}
 
