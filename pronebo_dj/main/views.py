@@ -67,4 +67,4 @@ def forms(request):
     else:
         form = OrderForm()
 
-    return render(request, 'inc/_contactform.html', {'form': form})
+    return render(request, 'main/contactform.html', {'form': form})
